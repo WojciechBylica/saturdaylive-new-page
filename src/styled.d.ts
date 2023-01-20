@@ -11,8 +11,8 @@ interface IScreenWidth {
 
 interface IColors {
   background: string;
-  text: string;
-  textSecondary: string;
+  primary: string;
+  secondary: string;
 }
 
 declare module 'styled-components' {

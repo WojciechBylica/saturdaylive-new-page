@@ -11,22 +11,31 @@ const colorNames = {
   scienceBlue: '#0366D6',
   dodgerBlue: '#2188FF',
   semiDark: '#363636b8',
-  violet3percent: '#090a3308',
-  violet2percent: '#090a3305',
-  scienceBlue2percent: '#0366d633',
-  scienceBlue50percent: '#0366d680'
+  black: '#333'
 };
 
 const media = {
-  sm: 767,
-  md: 991
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400
 };
 
 export const themeLight: DefaultTheme = {
   media,
   color: {
     background: colorNames.lightGrey,
-    text: colorNames.mineShaft,
-    textSecondary: colorNames.slateGrey
+    primary: colorNames.mineShaft,
+    secondary: colorNames.slateGrey
+  }
+};
+
+export const themeDark: DefaultTheme = {
+  media,
+  color: {
+    background: colorNames.lightGrey,
+    primary: colorNames.mineShaft,
+    secondary: colorNames.slateGrey
   }
 };

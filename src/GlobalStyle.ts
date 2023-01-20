@@ -1,16 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  html {
-    box-sizing: border-box;
-  };
+html {
+  box-sizing: border-box;
+};
 
-  *, ::after, ::before {
-    box-sizing: inherit;
-  };
+*, ::after, ::before {
+  box-sizing: inherit;
+};
 
-  body {
-      margin: 0 auto;
-      transition: transform 0.3s;
-  };
+body {
+    font-family: 'Lato', sans-serif;
+    background: ${({ theme }) => theme.color.background};
+    margin: 0 auto;
+    transition: transform 0.3s;
+};
 `;
