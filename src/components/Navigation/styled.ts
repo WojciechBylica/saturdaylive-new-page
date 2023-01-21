@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-const activeClassName = 'active';
+const activeclassname = 'active';
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
-  activeClassName
+  activeclassname
 }))`
   color: ${({ theme }) => theme.color.navColor};
   text-decoration: none;
@@ -11,7 +11,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   padding: 38px 10px;
   user-select: none;
 
-  &.${activeClassName} {
+  &.${activeclassname} {
     color: ${({ theme }) => theme.color.navColorHover};
     border-bottom: 2px solid ${({ theme }) => theme.color.navColorHover};
   }
