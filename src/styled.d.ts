@@ -13,6 +13,8 @@ interface IColors {
   background: string;
   primary: string;
   secondary: string;
+  navBackground: string;
+  navColor: string;
 }
 
 declare module 'styled-components' {

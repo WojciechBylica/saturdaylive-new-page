@@ -27,15 +27,8 @@ export const themeLight: DefaultTheme = {
   color: {
     background: colorNames.lightGrey,
     primary: colorNames.mineShaft,
-    secondary: colorNames.slateGrey
-  }
-};
-
-export const themeDark: DefaultTheme = {
-  media,
-  color: {
-    background: colorNames.lightGrey,
-    primary: colorNames.mineShaft,
-    secondary: colorNames.slateGrey
+    secondary: colorNames.slateGrey,
+    navBackground: colorNames.black,
+    navColor: colorNames.white
   }
 };

@@ -1,11 +1,22 @@
 import React from 'react';
-import { Container } from './Container';
+import { Layout } from '../components';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { Contact, Demo, Gallery, Home, Repertoir } from '../pages';
+import { About } from '../pages/About';
 
 const SaturdayLive = () => {
   return (
-    <Container>
-      <h1>SaturdayLive</h1>
-    </Container>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/o-nas" element={<About />} />
+        <Route path="/repertuar" element={<Repertoir />} />
+        <Route path="/galeria" element={<Gallery />} />
+        <Route path="/kontakt" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Layout>
   );
 };
 

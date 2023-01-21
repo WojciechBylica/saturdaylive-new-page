@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0.5rem 1rem;
   min-height: 100vh;
 
   @media (max-width: ${({ theme }) => theme.media.md}px) {
@@ -24,4 +23,8 @@ export const Container = styled.div`
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     max-width: 1400px;
   }
+`;
+
+export const Main = styled.main`
+  flex-grow: 1;
 `;
