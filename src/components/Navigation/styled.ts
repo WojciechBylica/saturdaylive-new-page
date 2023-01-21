@@ -19,6 +19,10 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &:hover {
     color: gold;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
 `;
 
 export const StyledNav = styled.nav`
