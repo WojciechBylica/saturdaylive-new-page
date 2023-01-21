@@ -2,7 +2,14 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
-import { StyledNav, NavList, StyledNavLink } from './styled';
+import {
+  StyledNav,
+  NavList,
+  StyledNavLink,
+  NavListMobile,
+  MenuHamburgerIcon,
+  HamburgerButton
+} from './styled';
 
 export const Nav = () => (
   <StyledNav>
@@ -21,5 +28,17 @@ export const Nav = () => (
         <li key={nanoid()}>{link}</li>
       ))}
     </NavList>
+    <NavListMobile>
+      <li>
+        <NavLink to="/">
+          <img height={60} width={178} src="sat7.gif" />
+        </NavLink>
+      </li>
+      <li>
+        <HamburgerButton aria-label="menu" onClick={() => {}}>
+          <MenuHamburgerIcon />
+        </HamburgerButton>
+      </li>
+    </NavListMobile>
   </StyledNav>
 );
