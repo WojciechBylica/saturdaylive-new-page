@@ -12,6 +12,7 @@ const colorNames = {
   // scienceBlue: '#0366D6',
   // dodgerBlue: '#2188FF',
   // semiDark: '#363636b8',
+  halfBlack: '#00000080',
   black: '#333'
 };
 
@@ -31,6 +32,7 @@ export const themeLight: DefaultTheme = {
     secondary: colorNames.white,
     navBackground: colorNames.black,
     navColor: colorNames.white,
-    navColorHover: colorNames.gold
+    navColorHover: colorNames.gold,
+    navAsideBackground: colorNames.halfBlack
   }
 };

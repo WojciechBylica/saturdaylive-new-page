@@ -16,6 +16,7 @@ interface IColors {
   navBackground: string;
   navColor: string;
   navColorHover: string;
+  navAsideBackground: string;
 }
 
 declare module 'styled-components' {

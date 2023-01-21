@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 const activeclassname = 'active';
 
-import { ReactComponent as HamburgerMenu } from './menu-down.svg';
+import { ReactComponent as HamburgerMenu } from './images/menu-down.svg';
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeclassname
-}))`
+}))<{ mobile?: boolean }>`
   color: ${({ theme }) => theme.color.navColor};
   text-decoration: none;
   margin: 30px 8px;
@@ -19,12 +19,18 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   }
 
   &:hover {
-    color: gold;
+    color: ${({ theme }) => theme.color.navColorHover};
   }
 
   &:focus-visible {
     outline: none;
   }
+
+  ${({ mobile }) =>
+    mobile &&
+    css`
+      padding: 16px 0 4px;
+    `};
 `;
 
 export const StyledNav = styled.nav`
@@ -96,8 +102,6 @@ export const HamburgerButton = styled.button`
 `;
 
 export const MenuHamburgerIcon = styled(HamburgerMenu)`
-  /* padding: 8px; */
-  /* color: black; */
   height: 40px;
   width: 40px;
 `;
