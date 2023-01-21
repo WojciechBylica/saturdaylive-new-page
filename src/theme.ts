@@ -3,14 +3,15 @@ import { DefaultTheme } from 'styled-components';
 const colorNames = {
   white: '#FFFFFF',
   whiteLilac: '#FBFBFE',
+  gold: '#ffd700',
   lightGrey: '#E5E5E5',
-  iron: '#d1d5da4d',
-  semiGrey: '#d1d5da1a',
-  slateGrey: '#6E7E91',
+  // iron: '#d1d5da4d',
+  // semiGrey: '#d1d5da1a',
+  // slateGrey: '#6E7E91',
   mineShaft: '#252525',
-  scienceBlue: '#0366D6',
-  dodgerBlue: '#2188FF',
-  semiDark: '#363636b8',
+  // scienceBlue: '#0366D6',
+  // dodgerBlue: '#2188FF',
+  // semiDark: '#363636b8',
   black: '#333'
 };
 
@@ -27,8 +28,9 @@ export const themeLight: DefaultTheme = {
   color: {
     background: colorNames.lightGrey,
     primary: colorNames.mineShaft,
-    secondary: colorNames.slateGrey,
+    secondary: colorNames.white,
     navBackground: colorNames.black,
-    navColor: colorNames.white
+    navColor: colorNames.white,
+    navColorHover: colorNames.gold
   }
 };

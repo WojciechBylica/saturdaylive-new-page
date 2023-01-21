@@ -9,10 +9,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   text-decoration: none;
   margin: 30px 8px;
   padding: 38px 10px;
+  user-select: none;
 
   &.${activeClassName} {
-    color: gold;
-    border-bottom: 2px solid gold;
+    color: ${({ theme }) => theme.color.navColorHover};
+    border-bottom: 2px solid ${({ theme }) => theme.color.navColorHover};
   }
 
   &:hover {
