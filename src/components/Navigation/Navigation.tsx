@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
@@ -8,7 +8,8 @@ import {
   StyledNavLink,
   NavListMobile,
   MenuHamburgerIcon,
-  HamburgerButton
+  HamburgerButton,
+  ScreenBlockingWrapper
 } from './styled';
 import { NavAside } from './NavAside';
 import { useAppDispatch, useAppSelector } from '../../hooks';
@@ -44,14 +45,15 @@ export const Nav = () => {
         </li>
         <li>
           <HamburgerButton
-            aria-label="menu"
+            aria-label="otwórz nawigację mobilną"
             onClick={() => dispatch(setMobileNavOpen())}
           >
             <MenuHamburgerIcon />
           </HamburgerButton>
         </li>
       </NavListMobile>
-      {showNavAside && <NavAside />}
+      {showNavAside && <ScreenBlockingWrapper />}
+      <NavAside />
     </StyledNav>
   );
 };

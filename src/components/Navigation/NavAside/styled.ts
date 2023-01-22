@@ -1,16 +1,10 @@
 import styled from 'styled-components';
 
-export const AsideWrapper = styled.div`
+export const StyledAside = styled.aside<{ open: boolean }>`
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  background: ${({ theme }) => theme.color.navAsideBackground};
-  transition: 0.5s;
-`;
-
-export const StyledAside = styled.aside`
+  z-index: 1000;
   width: 200px;
   height: 100%;
   max-height: 400px;
@@ -22,6 +16,8 @@ export const StyledAside = styled.aside`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: transform 1s ease-in-out;
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
 `;
 
 export const AsideList = styled.ul`

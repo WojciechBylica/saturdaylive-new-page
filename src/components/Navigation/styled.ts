@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 const activeclassname = 'active';
-
 import { ReactComponent as HamburgerMenu } from './images/menu-down.svg';
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
@@ -12,6 +11,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   margin: 30px 8px;
   padding: 38px 10px;
   user-select: none;
+  transition: color 0.3s linear;
 
   &.${activeclassname} {
     color: ${({ theme }) => theme.color.navColorHover};
@@ -40,6 +40,7 @@ export const StyledNav = styled.nav`
   height: 102px;
   display: flex;
   align-items: center;
+  transition: height 0.3s linear;
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     height: 80px;
@@ -70,6 +71,7 @@ export const NavListMobile = styled.ul`
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
+  transition: justify-content 0.3s linear;
 
   @media (min-width: ${({ theme }) => theme.media.lg}px) {
     display: none;
@@ -83,13 +85,14 @@ export const NavListMobile = styled.ul`
     justify-content: space-between;
   }
 `;
-export const HamburgerButton = styled.button`
+export const HamburgerButton = styled.button<{ close?: boolean }>`
   color: white;
   border: 1px solid white;
   background: #333;
   cursor: pointer;
   user-select: none;
   border-radius: 5px;
+  transition: color 0.3s linear;
 
   &:hover {
     color: gold;
@@ -99,9 +102,29 @@ export const HamburgerButton = styled.button`
   &:focus-visible {
     outline: none;
   }
+
+  ${({ close }) =>
+    close &&
+    css`
+      align-self: end;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+    `};
 `;
 
 export const MenuHamburgerIcon = styled(HamburgerMenu)`
   height: 40px;
   width: 40px;
+`;
+
+export const ScreenBlockingWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: ${({ theme }) => theme.color.navAsideBackground};
 `;
