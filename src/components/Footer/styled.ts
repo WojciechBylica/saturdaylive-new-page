@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { ReactComponent as MailBox } from './icons/mailbox.svg';
-import { ReactComponent as Facebook } from './icons/facebook.svg';
-import { ReactComponent as Instagram } from './icons/instagram.svg';
-import { ReactComponent as YouTube } from './icons/youtube.svg';
+import { ReactComponent as MailBox } from '../../icons/mailbox.svg';
+import { ReactComponent as Facebook } from '../../icons/facebook.svg';
+import { ReactComponent as Instagram } from '../../icons/instagram.svg';
+import { ReactComponent as YouTube } from '../../icons/youtube.svg';
 
 export const StyledFooter = styled.footer`
   width: 100%;

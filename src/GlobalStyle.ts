@@ -14,5 +14,12 @@ body {
     background: ${({ theme }) => theme.color.background};
     margin: 0 auto;
     transition: transform 0.3s;
+
+    h1 {
+  margin: 64px 16px 32px 16px;
+  font-size: 32px;
+}
 };
+
+
 `;

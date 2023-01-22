@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { NavLink } from 'react-router-dom';
+import { email, facebookURL, instagramURL, youtubeURL } from '../../media';
 import {
   StyledFooter,
   FooterList,
@@ -20,38 +22,31 @@ const Footer = () => (
           <img src="sat7.gif" height={50} />
         </NavLink>
       </li>
+
       <li>
         <MediaLinkBox>
-          <MediaLink href="mailto:kontakt@saturdaylive.pl">
+          <MediaLink href={`mailto:${email}`}>
             <MailBoxIcon />
             E-mail
           </MediaLink>
 
-          <MediaLink
-            href="https://facebook.pl/saturdayliveband"
-            target="_blank"
-          >
+          <MediaLink href={facebookURL} target="_blank">
             <FacebookIcon />
             Facebook
           </MediaLink>
-          <MediaLink
-            href="https://www.instagram.com/saturdayliveband/"
-            target="_blank"
-          >
+          <MediaLink href={instagramURL} target="_blank">
             <InstagramIcon />
             Instagram
           </MediaLink>
 
-          <MediaLink
-            href="https://youtube.com/c/saturdayliveband"
-            target="_blank"
-          >
+          <MediaLink href={youtubeURL} target="_blank">
             <YoutubeIcon />
             YouTube
           </MediaLink>
         </MediaLinkBox>
       </li>
     </FooterList>
+
     <FooterParagraph>
       Wszystkie prawa zatrzeżone | SaturdayLive | 2023
     </FooterParagraph>
