@@ -13,7 +13,10 @@ import {
 } from './styled';
 import { NavAside } from './NavAside';
 import { useAppDispatch, useAppSelector } from '../../hooks';
-import { setMobileNavOpen } from '../../saturdaylive/saturdayLiveReducer';
+import {
+  setMobileNavOpen,
+  setMobileNavClose
+} from '../../saturdaylive/saturdayLiveReducer';
 
 export const Nav = () => {
   const showNavAside = useAppSelector(
@@ -52,7 +55,9 @@ export const Nav = () => {
           </HamburgerButton>
         </li>
       </NavListMobile>
-      {showNavAside && <ScreenBlockingWrapper />}
+      {showNavAside && (
+        <ScreenBlockingWrapper onClick={() => dispatch(setMobileNavClose())} />
+      )}
       <NavAside />
     </StyledNav>
   );
