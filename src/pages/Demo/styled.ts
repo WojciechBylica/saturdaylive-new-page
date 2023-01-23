@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { ReactComponent as Youtube } from '../../icons/youtube.svg';
 import { ReactComponent as Instagram } from '../../icons/instagram.svg';
+import { ReactComponent as SoundCloud } from '../../icons/soundcloud.svg';
+import { ReactComponent as Facebook } from '../../icons/facebook.svg';
 
 export const FilmWrapper = styled.section`
     display: flex;
@@ -52,7 +54,7 @@ export const MediaLink = styled.a`
   width: fit-content;
   margin-bottom: 16px;
   text-decoration: none;
-  margin: 16px 0;
+  margin: 16px 8px 16px 0;
   padding: 12px 16px;
   border-radius: 10px;
 
@@ -69,6 +71,18 @@ export const YoutubeIcon = styled(Youtube)`
 `;
 
 export const InstagramIcon = styled(Instagram)`
+  margin-right: 16px;
+  height: 34px;
+  width: 34px;
+`;
+
+export const SoundCloudIcon = styled(SoundCloud)`
+  margin-right: 16px;
+  height: 34px;
+  width: 34px;
+`;
+
+export const FacebookIcon = styled(Facebook)`
   margin-right: 16px;
   height: 34px;
   width: 34px;
