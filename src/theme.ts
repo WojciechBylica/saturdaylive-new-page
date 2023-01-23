@@ -9,7 +9,7 @@ const colorNames = {
   // semiGrey: '#d1d5da1a',
   // slateGrey: '#6E7E91',
   mineShaft: '#252525',
-  // scienceBlue: '#0366D6',
+  cornFlowerBlue: '#6195ED',
   // dodgerBlue: '#2188FF',
   // semiDark: '#363636b8',
   halfBlack: '#00000080',
@@ -33,6 +33,8 @@ export const themeLight: DefaultTheme = {
     navBackground: colorNames.black,
     navColor: colorNames.white,
     navColorHover: colorNames.gold,
-    navAsideBackground: colorNames.halfBlack
+    navAsideBackground: colorNames.halfBlack,
+    linkHoverPrimary: colorNames.cornFlowerBlue,
+    linkHoverBackground: colorNames.black,
   }
 };

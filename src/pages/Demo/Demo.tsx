@@ -2,7 +2,8 @@ import { nanoid } from '@reduxjs/toolkit';
 import React from 'react';
 
 import { AudioPlayer, MainContentBox } from '../../components';
-import { FilmWrapper, DemoIframe } from './styled';
+import { instagramURL, youtubeURL } from '../../media';
+import { FilmWrapper, DemoIframe, MediaLink, YoutubeIcon, InstagramIcon,MediaSection,LinkBox } from './styled';
 
 type YoutubeLink = {
   name: string;
@@ -43,8 +44,6 @@ export const Demo = () => {
             {ytArrayStudio.map((link) => (
               <DemoIframe
                 key={nanoid()}
-                // width="560"
-                // height="315"
                 src={link.url}
                 title="YouTube video player"
                 frameBorder="0"
@@ -60,8 +59,6 @@ export const Demo = () => {
             {ytArrayPhone.map((link) => (
               <DemoIframe
                 key={nanoid()}
-                // width="560"
-                // height="315"
                 src={link.url}
                 title="YouTube video player"
                 frameBorder="0"
@@ -70,6 +67,16 @@ export const Demo = () => {
               ></DemoIframe>
             ))}
           </FilmWrapper>
+        </article>
+        <article>
+          <h2>Więcej filmów, zdjęcia</h2>
+          <MediaSection>
+            <LinkBox>
+            <MediaLink href={youtubeURL} target='_blank'><YoutubeIcon />Youtube</MediaLink>
+            <MediaLink href={instagramURL} target='_blank'><InstagramIcon />Instagram</MediaLink>
+            </LinkBox>
+          <p>Więcej materiałów dostępnych jest na naszych profilach YouTube, oraz Instagram</p>
+        </MediaSection>
         </article>
       </section>
     </MainContentBox>

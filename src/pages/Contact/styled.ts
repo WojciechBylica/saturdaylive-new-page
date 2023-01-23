@@ -43,7 +43,12 @@ export const ContactMailLink = styled.a`
   font-size: 34px;
   display: flex;
   align-items: center;
-  padding: 20px 8px;
+  width: fit-content;
+  margin-bottom: 16px;
+  text-decoration: none;
+  margin: 16px 0;
+  padding: 12px 16px;
+    border-radius: 10px;
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     font-size: 20px;
@@ -58,7 +63,9 @@ export const ContactMailLink = styled.a`
   }
 
   &:hover {
-    color: ${({ theme }) => theme.color.navColorHover};
+    color: ${({ theme }) => theme.color.secondary};
+    background: ${({ theme }) => theme.color.linkHoverBackground};
+    border-radius: 10px;
   }
 `;
 
