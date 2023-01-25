@@ -18,7 +18,7 @@ const Footer = () => (
   <StyledFooter>
     <FooterList>
       <li>
-        <NavLink to="/">
+        <NavLink to="/" aria-label="strona główna">
           <img src="sat7.gif" height={50} width={149} alt="logo SaturdayLive" />
         </NavLink>
       </li>
