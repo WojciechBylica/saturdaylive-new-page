@@ -56,10 +56,6 @@ export const NavList = styled.ul`
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-
-  @media (max-width: ${({ theme }) => theme.media.lg}px) {
-    display: none;
-  }
 `;
 
 export const NavListMobile = styled.ul`

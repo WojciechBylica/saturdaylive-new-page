@@ -6,7 +6,7 @@ import { setMobileNavClose } from '../../../saturdaylive/saturdayLiveReducer';
 import { HamburgerButton, StyledNavLink } from '../styled';
 import { StyledAside, AsideList, AsideListField } from './styled';
 
-export const NavAside = () => {
+const NavAside = () => {
   const dispatch = useAppDispatch();
   const showNavAside = useAppSelector(
     (state) => state.saturdayLive.showNavAside
@@ -80,3 +80,5 @@ export const NavAside = () => {
     </StyledAside>
   );
 };
+
+export default NavAside;
