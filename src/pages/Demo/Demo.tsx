@@ -4,7 +4,6 @@ import { nanoid } from '@reduxjs/toolkit';
 import type { YoutubeLink } from './types';
 import { AudioPlayer, MainContentBox, YoutubePlayer } from '../../components';
 import { FilmWrapper } from './styled';
-// import MediaArticle from './MediaArticle';
 
 const MediaArticle = lazy(() => import('./MediaArticle'));
 
