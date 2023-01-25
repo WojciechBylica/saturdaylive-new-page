@@ -36,12 +36,10 @@ const YoutubePlayer = ({
               <PlayImage
                 alt={label}
                 src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
-                loading="lazy"
               />
               <PlayIcon
                 alt="Odtwórz video"
                 src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
-                loading="lazy"
               />
             </div>
           </ThumbNailButton>
