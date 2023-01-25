@@ -1,16 +1,12 @@
-import React, { useTransition, useState, lazy, Suspense } from 'react';
+import React, { lazy } from 'react';
 
 import { nanoid } from '@reduxjs/toolkit';
 import type { YoutubeLink } from './types';
 import { AudioPlayer, MainContentBox, YoutubePlayer } from '../../components';
 import { FilmWrapper } from './styled';
-import MediaArticle from './MediaArticle';
+// import MediaArticle from './MediaArticle';
 
-// const MediaArticle = lazy(() => import('./MediaArticle'));
-
-// export default function Loading() {
-//   return <div />;
-// }
+const MediaArticle = lazy(() => import('./MediaArticle'));
 
 export const Demo = () => {
   const ytArrayStudio: YoutubeLink[] = [
