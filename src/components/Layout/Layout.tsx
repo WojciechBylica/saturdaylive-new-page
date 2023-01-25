@@ -1,16 +1,17 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+
 import { Footer } from '../Footer';
 import { Header } from '../Header';
 import { Container, Main } from './styled';
+import { Outlet } from 'react-router-dom';
 
-type Props = {
-  children: ReactNode;
-};
-export const Layout = ({ children }: Props) => {
+export const Layout = () => {
   return (
     <Container>
       <Header />
-      <Main>{children}</Main>
+      <Main>
+        <Outlet />
+      </Main>
       <Footer />
     </Container>
   );
