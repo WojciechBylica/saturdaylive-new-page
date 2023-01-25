@@ -31,7 +31,12 @@ export const Nav = () => {
           <StyledNavLink to="/demo">Demo</StyledNavLink>,
           <StyledNavLink to="/o-nas">O nas</StyledNavLink>,
           <NavLink to="/">
-            <img height={90} width={268} src="sat7.gif" />
+            <img
+              height={90}
+              width={268}
+              src="sat7.gif"
+              alt="logo SaturdayLive"
+            />
           </NavLink>,
           <StyledNavLink to="/repertuar">Repertuar</StyledNavLink>,
           <StyledNavLink to="/galeria">Galeria</StyledNavLink>,
@@ -43,7 +48,12 @@ export const Nav = () => {
       <NavListMobile>
         <li>
           <NavLink to="/">
-            <img height={60} width={178} src="sat7.gif" />
+            <img
+              height={60}
+              width={178}
+              src="sat7.gif"
+              alt="logo SaturdayLive"
+            />
           </NavLink>
         </li>
         <li>

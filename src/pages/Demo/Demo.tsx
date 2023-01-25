@@ -1,34 +1,43 @@
+import React, { useTransition, useState, lazy, Suspense } from 'react';
+
 import { nanoid } from '@reduxjs/toolkit';
-import React from 'react';
+import type { YoutubeLink } from './types';
+import { AudioPlayer, MainContentBox, YoutubePlayer } from '../../components';
+import { FilmWrapper } from './styled';
+import MediaArticle from './MediaArticle';
 
-import { AudioPlayer, MainContentBox } from '../../components';
-import { facebookURL, instagramURL, soundCloudURL, youtubeURL } from '../../media';
-import { FilmWrapper, DemoIframe, MediaLink, YoutubeIcon,SoundCloudIcon, InstagramIcon,MediaSection,LinkBox, FacebookIcon } from './styled';
+// const MediaArticle = lazy(() => import('./MediaArticle'));
 
-
-type YoutubeLink = {
-  name: string;
-  url: string;
-};
+// export default function Loading() {
+//   return <div />;
+// }
 
 export const Demo = () => {
   const ytArrayStudio: YoutubeLink[] = [
     {
-      name: 'Proud Mary',
-      url: 'https://www.youtube.com/embed/sLoFYoqpJFU'
+      label: 'Proud Mary',
+      videoId: 'sLoFYoqpJFU'
     },
     {
-      name: "Don't Start Now",
-      url: 'https://www.youtube.com/embed/W0rm_XUeJOI'
+      label: "Don't Start Now",
+      videoId: 'W0rm_XUeJOI'
     }
   ];
 
   const ytArrayPhone: YoutubeLink[] = [
     {
-      name: "You're Simply The Best",
-      url: 'https://www.youtube.com/embed/TjefJuUJi7g'
+      label: "You're Simply The Best",
+      videoId: 'TjefJuUJi7g'
     },
-    { name: 'Biała flaga', url: 'https://www.youtube.com/embed/KkxxSbw-er8' }
+    {
+      label: 'Biała flaga',
+      videoId: 'KkxxSbw-er8'
+    }
+  ];
+
+  const ytDemoArray = [
+    { title: 'Nagrania studyjne', array: ytArrayStudio },
+    { title: 'Nagrania wykonane telefonem', array: ytArrayPhone }
   ];
 
   return (
@@ -39,48 +48,19 @@ export const Demo = () => {
           <h2>Nagrania audio</h2>
           <AudioPlayer />
         </article>
-        <article>
-          <h2>Nagrania studyjne</h2>
-          <FilmWrapper>
-            {ytArrayStudio.map((link) => (
-              <DemoIframe
-                key={nanoid()}
-                src={link.url}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></DemoIframe>
-            ))}
-          </FilmWrapper>
-        </article>
-        <article>
-          <h2>Nagrania wykonane telefonem</h2>
-          <FilmWrapper>
-            {ytArrayPhone.map((link) => (
-              <DemoIframe
-                key={nanoid()}
-                src={link.url}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></DemoIframe>
-            ))}
-          </FilmWrapper>
-        </article>
-        <article>
-          <h2>Nasze profile w internecie</h2>
-          <MediaSection>
-            <LinkBox>
-            <MediaLink href={youtubeURL} target='_blank'><YoutubeIcon />Youtube</MediaLink>
-            <MediaLink href={instagramURL} target='_blank'><InstagramIcon />Instagram</MediaLink>
-            <MediaLink href={soundCloudURL} target='_blank'><SoundCloudIcon />SoundCloud</MediaLink>
-            <MediaLink href={facebookURL} target='_blank'><FacebookIcon />Facebook</MediaLink>
-            </LinkBox>
-          <p>Więcej materiałów dostępnych jest na naszych profilach YouTube, Instagram, SoundCloud, Facebook.</p>
-        </MediaSection>
-        </article>
+
+        {ytDemoArray.map(({ title, array }, index) => (
+          <article key={`${title}-${index}`}>
+            <h2>{title}</h2>
+            <FilmWrapper>
+              {array.map(({ label, videoId }) => (
+                <YoutubePlayer key={nanoid()} label={label} videoId={videoId} />
+              ))}
+            </FilmWrapper>
+          </article>
+        ))}
+
+        <MediaArticle />
       </section>
     </MainContentBox>
   );

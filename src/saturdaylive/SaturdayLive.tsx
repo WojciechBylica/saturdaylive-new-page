@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { Contact, Demo, Gallery, Home, Repertoir } from '../pages';
+import { Demo, Gallery, Home, Repertoir, Contact } from '../pages';
 import { About } from '../pages/About';
 
 const SaturdayLive = () => {

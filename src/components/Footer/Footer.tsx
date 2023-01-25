@@ -19,7 +19,7 @@ const Footer = () => (
     <FooterList>
       <li>
         <NavLink to="/">
-          <img src="sat7.gif" height={50} />
+          <img src="sat7.gif" height={50} width={149} alt="logo SaturdayLive" />
         </NavLink>
       </li>
 
@@ -48,7 +48,7 @@ const Footer = () => (
     </FooterList>
 
     <FooterParagraph>
-      Wszystkie prawa zatrzeżone | SaturdayLive | 2023
+      Wszystkie prawa zatrzeżone | SaturdayLive | {new Date().getFullYear()}
     </FooterParagraph>
   </StyledFooter>
 );
