@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import { nanoid } from '@reduxjs/toolkit';
 import type { YoutubeLink } from './types';
@@ -54,8 +54,9 @@ export const Demo = () => {
             </FilmWrapper>
           </article>
         ))}
-
+        <Suspense fallback={<div>...</div>}>
         <MediaArticle />
+        </Suspense>
       </section>
     </MainContentBox>
   );
