@@ -55,7 +55,7 @@ export const Demo = () => {
           </article>
         ))}
         <Suspense fallback={<div>...</div>}>
-        <MediaArticle />
+          <MediaArticle />
         </Suspense>
       </section>
     </MainContentBox>
