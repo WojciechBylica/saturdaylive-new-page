@@ -1,11 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-const activeclassname = 'active';
 import { ReactComponent as HamburgerMenu } from './images/menu-down.svg';
 
-export const StyledNavLink = styled(NavLink).attrs(() => ({
-  activeclassname
-}))<{ mobile?: boolean }>`
+export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.navColor};
   text-decoration: none;
   margin: 30px 8px;
@@ -13,7 +10,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   user-select: none;
   transition: color 0.3s linear;
 
-  &.${activeclassname} {
+  &.active {
     color: ${({ theme }) => theme.color.navColorHover};
     border-bottom: 2px solid ${({ theme }) => theme.color.navColorHover};
   }
@@ -25,12 +22,10 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &:focus-visible {
     outline: none;
   }
+`;
 
-  ${({ mobile }) =>
-    mobile &&
-    css`
-      padding: 16px 0 4px;
-    `};
+export const NavLinkMobile = styled(StyledNavLink)`
+  padding: 16px 0 4px;
 `;
 
 export const StyledNav = styled.nav`
