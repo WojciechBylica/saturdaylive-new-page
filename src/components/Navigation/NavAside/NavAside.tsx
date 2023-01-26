@@ -1,9 +1,10 @@
-import { nanoid } from '@reduxjs/toolkit';
 import React from 'react';
+
+import { nanoid } from '@reduxjs/toolkit';
 import { NavLink } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import { setMobileNavClose } from '../../../saturdaylive/saturdayLiveReducer';
-import { HamburgerButton, StyledNavLink } from '../styled';
+import { HamburgerButton, NavLinkMobile } from '../styled';
 import { StyledAside, AsideList, AsideListField } from './styled';
 
 const NavAside = () => {
@@ -22,53 +23,44 @@ const NavAside = () => {
       </HamburgerButton>
       <AsideList>
         {[
-          <StyledNavLink
-            mobile
-            to="/"
-            onClick={() => dispatch(setMobileNavClose())}
-          >
+          <NavLinkMobile to="/" onClick={() => dispatch(setMobileNavClose())}>
             Home
-          </StyledNavLink>,
+          </NavLinkMobile>,
 
-          <StyledNavLink
-            mobile
+          <NavLinkMobile
             to="/demo"
             onClick={() => dispatch(setMobileNavClose())}
           >
             Demo
-          </StyledNavLink>,
+          </NavLinkMobile>,
 
-          <StyledNavLink
-            mobile
+          <NavLinkMobile
             to="/o-nas"
             onClick={() => dispatch(setMobileNavClose())}
           >
             O nas
-          </StyledNavLink>,
+          </NavLinkMobile>,
 
-          <StyledNavLink
-            mobile
+          <NavLinkMobile
             to="/repertuar"
             onClick={() => dispatch(setMobileNavClose())}
           >
             Repertuar
-          </StyledNavLink>,
+          </NavLinkMobile>,
 
-          <StyledNavLink
-            mobile
+          <NavLinkMobile
             to="/galeria"
             onClick={() => dispatch(setMobileNavClose())}
           >
             Galeria
-          </StyledNavLink>,
+          </NavLinkMobile>,
 
-          <StyledNavLink
-            mobile
+          <NavLinkMobile
             to="/kontakt"
             onClick={() => dispatch(setMobileNavClose())}
           >
             Kontakt
-          </StyledNavLink>
+          </NavLinkMobile>
         ].map((link) => (
           <AsideListField key={nanoid()}>{link}</AsideListField>
         ))}
