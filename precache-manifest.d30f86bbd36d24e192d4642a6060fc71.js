@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/main.a257c7d9.chunk.js"
   },
   {
-    "revision": "51f0f2bdacbded20c2e9",
-    "url": "/saturdaylive-new-page/static/css/1.fe8d087c.chunk.css"
+    "revision": "92fa181a6729d0437aea",
+    "url": "/saturdaylive-new-page/static/css/1.a5d9c6fb.chunk.css"
   },
   {
-    "revision": "51f0f2bdacbded20c2e9",
-    "url": "/saturdaylive-new-page/static/js/1.51f0f2bd.chunk.js"
+    "revision": "92fa181a6729d0437aea",
+    "url": "/saturdaylive-new-page/static/js/1.92fa181a.chunk.js"
   },
   {
     "revision": "ad937b438cc5416aa65f",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/5.8c401cb6.chunk.js"
   },
   {
-    "revision": "2ffb99e8644a28f99544",
-    "url": "/saturdaylive-new-page/static/js/runtime~main.2ffb99e8.js"
+    "revision": "485e6010052a93ce13d2",
+    "url": "/saturdaylive-new-page/static/js/runtime~main.485e6010.js"
   },
   {
     "revision": "9858fd954e570ec3666f98aacf99eab3",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/media/mailbox.2d9d6931.svg"
   },
   {
-    "revision": "75d775bdb3749e02eb577c62b5ada001",
+    "revision": "d63e52f362feabdd127ea4e28addd77f",
     "url": "/saturdaylive-new-page/index.html"
   }
 ];
