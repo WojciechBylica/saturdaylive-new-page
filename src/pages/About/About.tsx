@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MainContentBox } from '../../components';
+import { ContactBox, MainContentBox } from '../../components';
 import SLOnStage from './images/IMG_6574.jpg';
 import MMWedding from './images/IMG_6578.jpg';
 import Cert1 from './certs/cert1.png';
@@ -24,7 +24,7 @@ import {
 export const About = () => {
   return (
     <MainContentBox>
-      <h1>SaturdayLive - O nas</h1>
+      <h1>O nas</h1>
       <AboutBox>
         <AboutArticle>
           <AboutImg src={SLOnStage} alt="SaturdayLive na scenie" />
@@ -44,6 +44,7 @@ export const About = () => {
             </AboutParagraph>
           </div>
         </AboutArticle>
+
         <AboutArticle>
           <AboutImg src={MMWedding} alt="SaturdayLive na weselu" />{' '}
           <div>
@@ -60,7 +61,9 @@ export const About = () => {
             </AboutParagraph>
           </div>
         </AboutArticle>
-
+      </AboutBox>
+      <h2>Doświadczenie</h2>
+      <AboutBox>
         <RowArticle>
           <AboutParagraph $modified>
             Grupa była nagradzana i&nbsp;doceniana przez branżę weselną,
@@ -98,6 +101,7 @@ export const About = () => {
           </AboutSection>
         </RowArticle>
       </AboutBox>
+      <ContactBox />
     </MainContentBox>
   );
 };

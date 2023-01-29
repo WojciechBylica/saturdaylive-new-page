@@ -2,7 +2,12 @@ import React, { lazy, Suspense } from 'react';
 
 import { nanoid } from '@reduxjs/toolkit';
 import type { YoutubeLink } from './types';
-import { AudioPlayer, MainContentBox, YoutubePlayer } from '../../components';
+import {
+  AudioPlayer,
+  ContactBox,
+  MainContentBox,
+  YoutubePlayer
+} from '../../components';
 import { FilmWrapper } from './styled';
 
 const MediaArticle = lazy(() => import('./MediaArticle'));
@@ -63,6 +68,8 @@ export const Demo = () => {
           <MediaArticle />
         </Suspense>
       </section>
+
+      <ContactBox />
     </MainContentBox>
   );
 };

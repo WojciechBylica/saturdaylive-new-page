@@ -28,6 +28,7 @@ export const themeLight: DefaultTheme = {
   media,
   color: {
     background: colorNames.lightGrey,
+    backgroundDark: colorNames.black,
     primary: colorNames.black,
     secondary: colorNames.white,
     navBackground: colorNames.black,
