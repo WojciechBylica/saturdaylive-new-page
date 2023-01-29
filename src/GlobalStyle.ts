@@ -11,6 +11,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    color: ${({ theme }) => theme.color.primary};
     background: ${({ theme }) => theme.color.background};
     margin: 0 auto;
     transition: transform 0.3s;

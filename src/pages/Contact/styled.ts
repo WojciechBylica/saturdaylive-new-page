@@ -13,8 +13,8 @@ export const ContactWrapper = styled.div`
 
 export const StyledMapIframe = styled.iframe`
   width: 650px;
-  height: 400px;
-  box-shadow: 1px 2px 5px #333;
+  height: 300px;
+  box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
   border-radius: 10px;
   border: 0;
@@ -31,8 +31,9 @@ export const ContactSection = styled.section`
   padding: 16px;
   border: 1px solid #333;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px #333;
+  box-shadow: ${({ theme }) => theme.boxShadow};
   flex-basis: 45%;
+
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     width: calc(100% - 32px);
   }
@@ -48,7 +49,7 @@ export const ContactMailLink = styled.a`
   text-decoration: none;
   margin: 16px 0;
   padding: 12px 16px;
-    border-radius: 10px;
+  border-radius: 10px;
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     font-size: 20px;

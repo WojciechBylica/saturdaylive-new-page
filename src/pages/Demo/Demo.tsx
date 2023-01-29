@@ -27,7 +27,12 @@ export const Demo = () => {
     {
       label: 'Biała flaga',
       videoId: 'KkxxSbw-er8'
-    }
+    },
+    {
+      label: 'SaturdayLive 2022',
+      videoId: '_4WFU0oH0E0'
+    },
+    { label: 'Waiting All Night', videoId: 'IbZYvoqYkCc' }
   ];
 
   const ytDemoArray = [

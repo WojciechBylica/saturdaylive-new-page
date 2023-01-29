@@ -23,13 +23,16 @@ export const Contact = () => {
           title="Lokalizacja na mapie google"
         />
         <ContactSection>
-          <p>Jesteśmy z Warszawy, ale dojedziemy w każde miejsce w Polsce.</p>
+          <p>
+            Jesteśmy z Warszawy, ale dojedziemy w&nbsp;każde miejsce
+            w&nbsp;Polsce.
+          </p>
           <ImportantParagraph>
             Koncerty, Imprezy firmowe, Wesela - to nasz żywioł!
           </ImportantParagraph>
           <p>
-            W sprawie rezerwacji zespołu, oraz w razie jakichkolwiek pytań
-            prosimy o kontakt:
+            W sprawie rezerwacji zespołu, oraz w&nbsp;razie jakichkolwiek pytań
+            prosimy o&nbsp;kontakt:
           </p>
           <ContactMailLink href={`mailto:${email}`}>
             <ContactMailIcon />

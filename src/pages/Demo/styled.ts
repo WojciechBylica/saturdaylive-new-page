@@ -11,33 +11,10 @@ export const FilmWrapper = styled.section`
   margin-bottom: 32px;
 `;
 
-// export const DemoIframe = styled.iframe`
-//     width: 560px;
-//     height: 315px;
-//     box-shadow: 1px 2px 5px #333;
-//     margin: 16px;
-//     border-radius: 10px;
-//     aspect-ratio: 16/9 !important;
-
-//     @media (max-width: ${({ theme }) => theme.media.xl}px) {
-//         width: 460px;
-//         height: 258px;
-//       }
-
-//       @media (max-width: ${({ theme }) => theme.media.lg}px) {
-//         width: 350px;
-//         height: 196px;
-//       }
-
-//       @media (max-width: ${({ theme }) => theme.media.md}px) {
-//         width: calc(100% - 32px);
-//         height: auto;
-//       }
-// `
 export const MediaSection = styled.section`
   border: 1px solid #333;
   border-radius: 10px;
-  box-shadow: 1px 2px 4px #333;
+  box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
   padding: 16px;
 `;

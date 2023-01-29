@@ -17,13 +17,14 @@ interface IColors {
   navColor: string;
   navColorHover: string;
   navAsideBackground: string;
-  linkHoverPrimary: string,
-  linkHoverBackground: string,
+  linkHoverPrimary: string;
+  linkHoverBackground: string;
 }
 
 declare module 'styled-components' {
   export interface DefaultTheme {
     media: IScreenWidth;
     color: IColors;
+    boxShadow: string;
   }
 }

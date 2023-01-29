@@ -27,7 +27,7 @@ export const VideoRatio = styled.div`
   position: relative;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px #333;
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 export const PlayImage = styled.img`

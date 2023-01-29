@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-export const StyledIframe = styled.iframe`
-  width: calc(100% - 32px);
-  height: 400px;
-  box-shadow: 1px 2px 5px #333;
-  margin: 16px;
+export const PlayerSection = styled.section`
+  background-color: #00000091;
   border-radius: 10px;
+  margin: 0 16px;
+`;
 
-  @media (max-width: ${({ theme }) => theme.media.md}px) {
-    width: calc(100% - 32px);
-  }
+export const StyledIframe = styled.iframe`
+  width: 100%;
+  height: 400px;
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  border-radius: 10px;
 `;

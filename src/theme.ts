@@ -28,13 +28,14 @@ export const themeLight: DefaultTheme = {
   media,
   color: {
     background: colorNames.lightGrey,
-    primary: colorNames.mineShaft,
+    primary: colorNames.black,
     secondary: colorNames.white,
     navBackground: colorNames.black,
     navColor: colorNames.white,
     navColorHover: colorNames.gold,
     navAsideBackground: colorNames.halfBlack,
     linkHoverPrimary: colorNames.cornFlowerBlue,
-    linkHoverBackground: colorNames.black,
-  }
+    linkHoverBackground: colorNames.black
+  },
+  boxShadow: `1px 2px 5px ${colorNames.black}`
 };

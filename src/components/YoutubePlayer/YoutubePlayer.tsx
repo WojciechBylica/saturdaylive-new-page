@@ -20,7 +20,12 @@ const YoutubePlayer = ({
   const [, startTransition] = useTransition();
   const [showVideo, setShowVideo] = useState(false);
   const [hasLoaded, setHasLoaded] = useState(false);
-
+  const imgQuality:
+    | 'maxresdefault'
+    | 'sddefault'
+    | 'hqdefault'
+    | 'mqdefault'
+    | 'default' = 'sddefault';
   return (
     <FilmBox>
       <VideoRatio>
@@ -35,7 +40,8 @@ const YoutubePlayer = ({
             <div>
               <PlayImage
                 alt={label}
-                src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
+                src={`https://i.ytimg.com/vi/${videoId}/${imgQuality}.jpg`}
+                title={label}
               />
               <PlayIcon
                 alt="Odtwórz video"
