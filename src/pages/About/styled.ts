@@ -44,7 +44,7 @@ export const AboutImg = styled.img`
   }
 `;
 
-export const AboutParagraph = styled.p<{ modified?: boolean }>`
+export const AboutParagraph = styled.p<{ $modified?: boolean }>`
   margin-top: 0;
   padding-left: 20px;
 
@@ -52,20 +52,20 @@ export const AboutParagraph = styled.p<{ modified?: boolean }>`
     padding-left: 0;
   }
 
-  ${({ modified }) =>
-    modified &&
+  ${({ $modified }) =>
+    $modified &&
     css`
       padding-left: 0;
     `};
 `;
 
-export const AboutSection = styled.section<{ wrap?: boolean }>`
+export const AboutSection = styled.section<{ $wrap?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  ${({ wrap }) =>
-    wrap &&
+  ${({ $wrap }) =>
+    $wrap &&
     css`
       flex-wrap: wrap;
     `};

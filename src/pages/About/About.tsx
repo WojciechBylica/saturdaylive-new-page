@@ -62,7 +62,7 @@ export const About = () => {
         </AboutArticle>
 
         <RowArticle>
-          <AboutParagraph modified>
+          <AboutParagraph $modified>
             Grupa była nagradzana i&nbsp;doceniana przez branżę weselną,
             otrzymując:
           </AboutParagraph>
@@ -80,7 +80,7 @@ export const About = () => {
               Ślubnych (2016).
             </li>
           </ul>
-          <AboutSection wrap>
+          <AboutSection $wrap>
             <CertImg src={Cert2} alt="" width={200} height={275} />
             <CertImg src={Cert3} alt="" width={200} height={275} />
             <CertImg src={Cert1} alt="" width={200} height={120} />
@@ -88,8 +88,8 @@ export const About = () => {
         </RowArticle>
 
         <RowArticle>
-          <AboutParagraph modified>Zaufali nam m. in. :</AboutParagraph>
-          <AboutSection wrap>
+          <AboutParagraph $modified>Zaufali nam m. in. :</AboutParagraph>
+          <AboutSection $wrap>
             <LidlLogo />
             <CasionosLogo />
             <OnTracoLogo />
