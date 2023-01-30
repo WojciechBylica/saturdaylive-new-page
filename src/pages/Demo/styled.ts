@@ -12,7 +12,7 @@ export const FilmWrapper = styled.section`
 `;
 
 export const MediaSection = styled.section`
-background: ${({ theme }) => theme.color.backgroundLight};
+  background: ${({ theme }) => theme.color.backgroundLight};
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
