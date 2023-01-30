@@ -1,17 +1,18 @@
 import React from 'react';
 
 import { Layout } from '../components';
-import { Navigate } from 'react-router-dom';
 import { Demo, Gallery, Home, Repertoir, Contact } from '../pages';
 import { About } from '../pages/About';
 import {
-  createBrowserRouter,
+  // createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
-  RouterProvider
+  RouterProvider,
+  Navigate
 } from 'react-router-dom';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import { NavLink } from 'react-router-dom';
 import {
@@ -7,14 +7,14 @@ import {
   HamburgerButton,
   ScreenBlockingWrapper
 } from './styled';
-import { NavAside } from './NavAside';
+// import { NavAside } from './NavAside';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import {
   setMobileNavOpen,
   setMobileNavClose
 } from '../../saturdaylive/saturdayLiveReducer';
 
-// const NavAside = lazy(() => import('./NavAside/NavAside'));
+const NavAside = lazy(() => import('./NavAside/NavAside'));
 
 export const NavigationMobile = () => {
   const showNavAside = useAppSelector(
@@ -48,7 +48,9 @@ export const NavigationMobile = () => {
       {showNavAside && (
         <ScreenBlockingWrapper onClick={() => dispatch(setMobileNavClose())} />
       )}
-      <NavAside />
+      <Suspense fallback={<div>...</div>}>
+        <NavAside />
+      </Suspense>
     </>
   );
 };
