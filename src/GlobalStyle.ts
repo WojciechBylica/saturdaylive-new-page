@@ -25,6 +25,10 @@ body {
     margin-left: 16px;
     margin-right: 16px;
   }
+
+  h3 {
+    margin-right: 20px;
+  }
 };
 
 
