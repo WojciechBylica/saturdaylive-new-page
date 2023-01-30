@@ -1,4 +1,4 @@
-export const repertoirArray = [
+export const repertoireArray = [
   {
     title: 'Najświeższe brzmienia z ostatnich miesięcy',
     songs: [

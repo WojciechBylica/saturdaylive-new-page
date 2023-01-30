@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 
 const colorNames = {
-  white: '#FFFFFF',
+  white: '#fefefe',
   whiteLilac: '#FBFBFE',
   gold: '#ffd700',
   lightGrey: '#E5E5E5',
@@ -29,6 +29,7 @@ export const themeLight: DefaultTheme = {
   color: {
     background: colorNames.lightGrey,
     backgroundDark: colorNames.black,
+    backgroundLight: colorNames.white,
     primary: colorNames.black,
     secondary: colorNames.white,
     navBackground: colorNames.black,

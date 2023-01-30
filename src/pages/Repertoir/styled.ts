@@ -1,45 +1,49 @@
 import styled, { css } from 'styled-components';
 
-export const RepertoirSection = styled.section<{ $modified?: boolean }>`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px solid ${({ theme }) => theme.color.primary};
+export const RepertoirSection = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
-  padding: 16px;
 
-  @media (max-width: ${({ theme }) => theme.media.md}px) {
-    flex-direction: column;
-    align-items: flex-start;
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    display: block;
   }
-
-  ${({ $modified }) =>
-    $modified &&
-    css`
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: start;
-
-      @media (max-width: ${({ theme }) => theme.media.xl}px) {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @media (max-width: ${({ theme }) => theme.media.md}px) {
-        grid-template-columns: 1fr;
-      }
-    `};
 `;
 
+export const RepertoireButtons = styled.section<{ $modified?: boolean }>`
+background: ${({ theme }) => theme.color.backgroundDark};
+color: ${({ theme }) => theme.color.secondary};
+border-radius: 0 10px 10px 0;
+
+@media (max-width: ${({ theme }) => theme.media.sm}px) {
+  border-radius: 0 0 10px 10px;
+}
+
+${({ $modified }) =>
+$modified &&
+css`
+background: ${({ theme }) => theme.color.backgroundLight};
+color: ${({ theme }) => theme.color.primary};
+border-radius: 10px  0 0 10px;
+
+@media (max-width: ${({ theme }) => theme.media.sm}px) {
+  border-radius:  10px 10px 0 0;
+}
+`};
+`
+
 export const StyledHeader = styled.h2`
-  margin: 0 0 16px 0;
+padding: 16px 0 0 16px;
+margin: 0;
 `;
 
 export const StyledList = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 0;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.media.md}px) {
     flex-direction: column;
@@ -51,7 +55,7 @@ export const ListField = styled.li`
   list-style-type: none;
 `;
 
-export const RepertoirLink = styled.a`
+export const RepertoirLink = styled.a<{ $modified?: boolean }>`
   color: ${({ theme }) => theme.color.primary};
   font-size: 20px;
   display: flex;
@@ -59,17 +63,31 @@ export const RepertoirLink = styled.a`
   width: fit-content;
   margin-bottom: 16px;
   text-decoration: none;
-  margin: 16px 8px 16px 0;
+  margin: 16px;
   padding: 12px 16px;
   border-radius: 10px;
   cursor: pointer;
   background-color: inherit;
-  border: none;
+  border: 1px solid;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition-duration: 500ms;
 
   &:hover {
     color: ${({ theme }) => theme.color.secondary};
     background: ${({ theme }) => theme.color.linkHoverBackground};
   }
+
+  ${({ $modified }) =>
+$modified &&
+css`
+background: ${({ theme }) => theme.color.backgroundLight};
+color: ${({ theme }) => theme.color.primary};
+
+// @media (max-width: ${({ theme }) => theme.media.sm}px) {
+//   border-radius:  10px 10px 0 0;
+// }
+`};
 `;
 
 export const RepertoirBigField = styled.li`
@@ -85,7 +103,6 @@ export const RepertoirSmallListField = styled.li`
 `;
 
 export const ListSection = styled.section`
-  border: 1px solid ${({ theme }) => theme.color.primary};
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
@@ -105,9 +122,8 @@ export const HeaderImage = styled.img`
   margin-right: 20px;
 `;
 
-export const AlfabeticalList = styled.ul<{ $modified?: boolean }>`
+export const AlphabeticalList = styled.ul<{ $modified?: boolean }>`
   columns: 3;
-  // padding-left: 0;
   margin-top: 0;
 
   @media (max-width: ${({ theme }) => theme.media.xl}px) {

@@ -12,6 +12,7 @@ interface IScreenWidth {
 interface IColors {
   background: string;
   backgroundDark: string;
+  backgroundLight: string;
   primary: string;
   secondary: string;
   navBackground: string;

@@ -7,111 +7,59 @@ import {
   StyledHeader,
   ListField,
   RepertoirLink,
-  ListSection,
-  AlfabeticalList,
-  RepertoirBigField,
-  RepertoirSmallList,
-  RepertoirSmallListField,
-  ListHeader,
-  HeaderImage
+  RepertoireButtons,
 } from './styled';
-import { repertoirArray } from './repertoirArray';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { setToggleRepertoire } from '../../saturdaylive/saturdayLiveReducer';
+import { RepertoireAlphabetical, RepertoireByStyle } from './components';
 
 export const Repertoir = () => {
-  const getSortedSongs = (
-    repertoirArray: {
-      title: string;
-      songs: string[];
-    }[]
-  ) => {
-    let songList: string[] = [];
-    repertoirArray
-      .map(({ songs }) => songs)
-      .map((array) => {
-        songList.push(...[...array]);
-      });
-    return songList.sort((a, b) => a.localeCompare(b));
-  };
-
-  const sortedSongs = getSortedSongs(repertoirArray);
+  const repertoireAlphabetical = useAppSelector(
+    ({ saturdayLive }) => saturdayLive.repertoireAlphabetical
+  );
+  const dispatch = useAppDispatch();
 
   return (
     <MainContentBox>
       <h1>Repertuar</h1>
 
       <RepertoirSection>
-        <article>
-          <StyledHeader>Pobierz</StyledHeader>
+        <RepertoireButtons $modified>
+          <StyledHeader>Pobierz repertuar</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoirLink
-                href={'Repertuar-SL-alfabetycznie.pdf'}
-              >
-                Repertuar alfabetycznie
+              <RepertoirLink href={'Repertuar-SL-alfabetycznie.pdf'}>
+                Podział alfabetyczny
               </RepertoirLink>
             </ListField>
             <ListField>
-              <RepertoirLink
-                href={'Repertuar-SL-stylistycznie.pdf'}
-              >
-                Repertuar stylistycznie
+              <RepertoirLink href={'Repertuar-SL-stylistycznie.pdf'}>
+                Podział stylistyczny
               </RepertoirLink>
             </ListField>
           </StyledList>
-        </article>
-        <article>
+        </RepertoireButtons>
+
+        <RepertoireButtons>
           <StyledHeader>Sortuj</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoirLink as="button" onClick={() => {}}>
-                Repertuar alfabetycznie
-              </RepertoirLink>
-            </ListField>
-            <ListField>
-              <RepertoirLink as="button" onClick={() => {}}>
-                Repertuar stylistycznie
+              <RepertoirLink $modified
+                as="button"
+                onClick={() => dispatch(setToggleRepertoire())}
+              >
+                Wyświetl podział{' '}
+                {!repertoireAlphabetical ? 'alfabetyczny' : 'stylistyczny'}
               </RepertoirLink>
             </ListField>
           </StyledList>
-        </article>
+        </RepertoireButtons>
       </RepertoirSection>
-
-      <ListSection>
-        <ListHeader>
-          <HeaderImage src="favicon.ico" alt="logo" />
-          Repertuar SaturdayLive - podział stylistyczny
-        </ListHeader>
-        <AlfabeticalList $modified>
-          {repertoirArray.map(({ title, songs }, index) => (
-            <RepertoirBigField key={`songs-group-${index}`}>
-              <h3>{title}</h3>
-              <RepertoirSmallList>
-                {songs.map((song, index) => (
-                  <RepertoirSmallListField
-                    key={`alfabetical-sorted-song-${index}`}
-                  >
-                    {song}
-                  </RepertoirSmallListField>
-                ))}
-              </RepertoirSmallList>
-            </RepertoirBigField>
-          ))}
-        </AlfabeticalList>
-      </ListSection>
-
-      <ListSection>
-        <ListHeader>
-          <HeaderImage src="favicon.ico" alt="logo" />
-          Repertuar SaturdayLive - podział alfabetyczny
-        </ListHeader>
-        <AlfabeticalList>
-          {sortedSongs.map((song, index) => (
-            <RepertoirSmallListField key={`song${index}`}>
-              {song}
-            </RepertoirSmallListField>
-          ))}
-        </AlfabeticalList>
-      </ListSection>
+      {repertoireAlphabetical ? (
+        <RepertoireAlphabetical />
+      ) : (
+        <RepertoireByStyle />
+      )}
 
       <ContactBox />
     </MainContentBox>
