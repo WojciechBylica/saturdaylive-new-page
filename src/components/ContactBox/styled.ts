@@ -38,7 +38,7 @@ export const ContactMailLink = styled.a`
   transition-duration: 500ms;
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   &:hover {
