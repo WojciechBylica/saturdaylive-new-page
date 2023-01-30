@@ -12,7 +12,7 @@ export const FilmWrapper = styled.section`
 `;
 
 export const MediaSection = styled.section`
-  border: 1px solid #333;
+background: ${({ theme }) => theme.color.backgroundLight};
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
@@ -34,6 +34,9 @@ export const MediaLink = styled.a`
   margin: 16px 8px 16px 0;
   padding: 12px 16px;
   border-radius: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition-duration: 500ms;
 
   &:hover {
     color: ${({ theme }) => theme.color.secondary};

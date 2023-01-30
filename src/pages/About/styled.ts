@@ -18,9 +18,9 @@ export const AboutArticle = styled.article`
   display: flex;
   margin: 0 16px 32px 16px;
   border-radius: 10px;
-  border: 1px solid #333;
   padding: 16px;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  background: ${({ theme }) => theme.color.backgroundLight};
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     flex-wrap: wrap;

@@ -8,13 +8,13 @@ export const ContactArticle = styled.article`
 
 export const ContactSection = styled.section`
   margin: 16px auto;
-  border: 1px solid ${({ theme }) => theme.color.primary};
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   width: calc(100% - 32px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  background: ${({ theme }) => theme.color.backgroundLight};
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
     display: block;
@@ -23,6 +23,7 @@ export const ContactSection = styled.section`
 
 export const ContactMailLink = styled.a`
   color: ${({ theme }) => theme.color.primary};
+  border: 1px solid;
   font-size: 34px;
   display: flex;
   align-items: center;
@@ -32,6 +33,9 @@ export const ContactMailLink = styled.a`
   margin: 16px 0;
   padding: 12px 16px;
   border-radius: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition-duration: 500ms;
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     font-size: 20px;

@@ -83,10 +83,6 @@ $modified &&
 css`
 background: ${({ theme }) => theme.color.backgroundLight};
 color: ${({ theme }) => theme.color.primary};
-
-// @media (max-width: ${({ theme }) => theme.media.sm}px) {
-//   border-radius:  10px 10px 0 0;
-// }
 `};
 `;
 

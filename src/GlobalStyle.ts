@@ -17,13 +17,12 @@ body {
     transition: transform 0.3s;
 
     h1 {
-  margin: 32px 16px;
+  margin: 32px 16px 16px;
   font-size: 32px;
 }
 
   h2 {
-    margin-left: 16px;
-    margin-right: 16px;
+   margin: 32px 16px;
   }
 
   h3 {

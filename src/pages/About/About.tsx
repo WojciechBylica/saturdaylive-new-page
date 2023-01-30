@@ -21,8 +21,7 @@ import {
   CertImg
 } from './styled';
 
-export const About = () => {
-  return (
+export const About = () => (
     <MainContentBox>
       <h1>O nas</h1>
       <AboutBox>
@@ -104,4 +103,3 @@ export const About = () => {
       <ContactBox />
     </MainContentBox>
   );
-};
