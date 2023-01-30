@@ -72,16 +72,43 @@ export const RepertoirLink = styled.a`
   }
 `;
 
-export const AlfabeticalSection = styled.section`
-  order: 1px solid ${({ theme }) => theme.color.primary};
+export const RepertoirBigField = styled.li`
+  margin-bottom: 32px;
+  padding-left: 0;
+`;
+export const RepertoirSmallList = styled.ul`
+  list-style-type: disc;
+`;
+
+export const RepertoirSmallListField = styled.li`
+  padding: 4px 0;
+`;
+
+export const ListSection = styled.section`
+  border: 1px solid ${({ theme }) => theme.color.primary};
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   margin: 16px;
   padding: 16px;
+  box-shadow: 0 0 0 black, 0 0 6em #8a4d0f inset;
+  background: #fffef0;
 `;
 
-export const AlfabeticalList = styled.ul`
+export const ListHeader = styled.h2`
+  display: flex;
+  align-items: center;
+`;
+
+export const HeaderImage = styled.img`
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+`;
+
+export const AlfabeticalList = styled.ul<{ $modified?: boolean }>`
   columns: 3;
+  // padding-left: 0;
+  margin-top: 0;
 
   @media (max-width: ${({ theme }) => theme.media.xl}px) {
     columns: 2;
@@ -90,4 +117,12 @@ export const AlfabeticalList = styled.ul`
   @media (max-width: ${({ theme }) => theme.media.md}px) {
     columns: 1;
   }
+
+  ${({ $modified }) =>
+    $modified &&
+    css`
+  list-style-type: none;
+  padding-left: 0;
+    }
+  `};
 `;

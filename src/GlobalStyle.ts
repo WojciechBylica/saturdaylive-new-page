@@ -28,6 +28,7 @@ body {
 
   h3 {
     margin-right: 20px;
+    margin-top: 0;
   }
 };
 

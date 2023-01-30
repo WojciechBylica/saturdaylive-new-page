@@ -7,11 +7,15 @@ import {
   StyledHeader,
   ListField,
   RepertoirLink,
-  AlfabeticalSection,
-  AlfabeticalList
+  ListSection,
+  AlfabeticalList,
+  RepertoirBigField,
+  RepertoirSmallList,
+  RepertoirSmallListField,
+  ListHeader,
+  HeaderImage
 } from './styled';
 import { repertoirArray } from './repertoirArray';
-import { nanoid } from '@reduxjs/toolkit';
 
 export const Repertoir = () => {
   const getSortedSongs = (
@@ -21,10 +25,11 @@ export const Repertoir = () => {
     }[]
   ) => {
     let songList: string[] = [];
-    const songsArrays = repertoirArray.map(({ songs }) => songs);
-    songsArrays.map((array) => {
-      songList.push(...[...array]);
-    });
+    repertoirArray
+      .map(({ songs }) => songs)
+      .map((array) => {
+        songList.push(...[...array]);
+      });
     return songList.sort((a, b) => a.localeCompare(b));
   };
 
@@ -41,7 +46,6 @@ export const Repertoir = () => {
             <ListField>
               <RepertoirLink
                 href={'Repertuar-SL-alfabetycznie.pdf'}
-                target="_blank"
               >
                 Repertuar alfabetycznie
               </RepertoirLink>
@@ -49,7 +53,6 @@ export const Repertoir = () => {
             <ListField>
               <RepertoirLink
                 href={'Repertuar-SL-stylistycznie.pdf'}
-                target="_blank"
               >
                 Repertuar stylistycznie
               </RepertoirLink>
@@ -73,28 +76,42 @@ export const Repertoir = () => {
         </article>
       </RepertoirSection>
 
-      <h2>Repertuar stylistycznie</h2>
-      <RepertoirSection $modified>
-        {repertoirArray.map(({ title, songs }) => (
-          <section key={nanoid()}>
-            <h3>{title}</h3>
-            <ul>
-              {songs.map((song) => (
-                <li key={nanoid()}>{song}</li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </RepertoirSection>
-
-      <h2>Repertuar alfabetycznie</h2>
-      <AlfabeticalSection>
-        <AlfabeticalList>
-          {sortedSongs.map((song, index) => (
-            <li key={`song${index}`}>{song}</li>
+      <ListSection>
+        <ListHeader>
+          <HeaderImage src="favicon.ico" alt="logo" />
+          Repertuar SaturdayLive - podział stylistyczny
+        </ListHeader>
+        <AlfabeticalList $modified>
+          {repertoirArray.map(({ title, songs }, index) => (
+            <RepertoirBigField key={`songs-group-${index}`}>
+              <h3>{title}</h3>
+              <RepertoirSmallList>
+                {songs.map((song, index) => (
+                  <RepertoirSmallListField
+                    key={`alfabetical-sorted-song-${index}`}
+                  >
+                    {song}
+                  </RepertoirSmallListField>
+                ))}
+              </RepertoirSmallList>
+            </RepertoirBigField>
           ))}
         </AlfabeticalList>
-      </AlfabeticalSection>
+      </ListSection>
+
+      <ListSection>
+        <ListHeader>
+          <HeaderImage src="favicon.ico" alt="logo" />
+          Repertuar SaturdayLive - podział alfabetyczny
+        </ListHeader>
+        <AlfabeticalList>
+          {sortedSongs.map((song, index) => (
+            <RepertoirSmallListField key={`song${index}`}>
+              {song}
+            </RepertoirSmallListField>
+          ))}
+        </AlfabeticalList>
+      </ListSection>
 
       <ContactBox />
     </MainContentBox>

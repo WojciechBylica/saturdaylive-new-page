@@ -1,6 +1,6 @@
 export const repertoirArray = [
   {
-    title: 'Najświeższe brzmienia z ostatnich miesięcy',
+    title: 'Najświeższe brzmienia z ostatnich miesięcy',
     songs: [
       'Amazing - Seal',
       'Blurred Lines – Robin Thicke',
