@@ -1,6 +1,13 @@
 import React from 'react';
+
 import { AudioPlayer, ContactBox, MainContentBox } from '../../components';
-import { HomeDescription, StyledHeader, Wrapper, DescriptionWrapper } from './styled';
+import {
+  HomeDescription,
+   StyledHeader,
+  Wrapper,
+  MainHeader,
+  MainDescription
+, DescriptionWrapper } from './styled';
 
 export const Home = () => {
   return (

@@ -13,30 +13,30 @@ export const RepertoirSection = styled.section`
 `;
 
 export const RepertoireButtons = styled.section<{ $modified?: boolean }>`
-background: ${({ theme }) => theme.color.backgroundDark};
-color: ${({ theme }) => theme.color.secondary};
-border-radius: 0 10px 10px 0;
+  background: ${({ theme }) => theme.color.backgroundDark};
+  color: ${({ theme }) => theme.color.secondary};
+  border-radius: 0 10px 10px 0;
 
-@media (max-width: ${({ theme }) => theme.media.sm}px) {
-  border-radius: 0 0 10px 10px;
-}
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    border-radius: 0 0 10px 10px;
+  }
 
-${({ $modified }) =>
-$modified &&
-css`
-background: ${({ theme }) => theme.color.backgroundLight};
-color: ${({ theme }) => theme.color.primary};
-border-radius: 10px  0 0 10px;
+  ${({ $modified }) =>
+    $modified &&
+    css`
+      background: ${({ theme }) => theme.color.backgroundLight};
+      color: ${({ theme }) => theme.color.primary};
+      border-radius: 10px 0 0 10px;
 
-@media (max-width: ${({ theme }) => theme.media.sm}px) {
-  border-radius:  10px 10px 0 0;
-}
-`};
-`
+      @media (max-width: ${({ theme }) => theme.media.sm}px) {
+        border-radius: 10px 10px 0 0;
+      }
+    `};
+`;
 
 export const StyledHeader = styled.h2`
-padding: 16px 0 0 16px;
-margin: 0;
+  padding: 16px 0 0 16px;
+  margin: 0;
 `;
 
 export const StyledList = styled.ul`
@@ -79,11 +79,11 @@ export const RepertoirLink = styled.a<{ $modified?: boolean }>`
   }
 
   ${({ $modified }) =>
-$modified &&
-css`
-background: ${({ theme }) => theme.color.backgroundLight};
-color: ${({ theme }) => theme.color.primary};
-`};
+    $modified &&
+    css`
+      background: ${({ theme }) => theme.color.backgroundLight};
+      color: ${({ theme }) => theme.color.primary};
+    `};
 `;
 
 export const RepertoirBigField = styled.li`
@@ -133,8 +133,7 @@ export const AlphabeticalList = styled.ul<{ $modified?: boolean }>`
   ${({ $modified }) =>
     $modified &&
     css`
-  list-style-type: none;
-  padding-left: 0;
-    }
-  `};
+      list-style-type: none;
+      padding-left: 0;
+    `};
 `;

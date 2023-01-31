@@ -4,7 +4,7 @@ export const StyledAside = styled.aside<{ open: boolean }>`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1080;
   width: 200px;
   height: 100%;
   max-height: 400px;
