@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import foto from './foto1.jpg';
+import fotoBgr from './foto2.jpg';
 
 export const StyledHeader = styled.header`
   position: relative;
@@ -11,7 +12,6 @@ export const StyledHeader = styled.header`
   background-size: contain;
   color: white;
   background-color: #333;
-  /* background: radial-gradient(black, transparent); */
   background-repeat: no-repeat;
 `;
 
@@ -30,7 +30,13 @@ export const Wrapper = styled.div`
 export const HomeDescription = styled.section`
   margin: 16px 16px 48px;
   border-radius: 10px;
-  padding: 16px;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  background-image: url(${fotoBgr});
+`;
+
+export const DescriptionWrapper = styled.div`
   background: ${({ theme }) => theme.color.backgroundLight};
+  padding: 16px;
+  opacity: 0.8;
+  border-radius: 10px;
 `;
