@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{69:function(e,a,n){},88:function(e,a,n){"use strict";n.r(a);var o=n(1),t=n.n(o),r=n(71);n(69);a.default=function(e){var a=e.setHasLoaded,n=e.videoId;return t.a.createElement(r.a,{videoId:n,onReady:function(e){a(!0),e.target.playVideo()},className:"videoInner",iframeClassName:"videoInner",opts:{playerVars:{autoplay:1,rel:0}}})}}}]);
+//# sourceMappingURL=2.c3bf3336.chunk.js.map
