@@ -12,7 +12,6 @@ import {
   StopButton
 } from './styled';
 import { YoutubePlayerMain } from './YoutubePlayer';
-import SLFoto from './SLfoto.jpg';
 
 export const Home = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -59,22 +58,8 @@ export const Home = () => {
               muzyce, wyrazistego zespołu z&nbsp;dobrą prezencją i świetnym
               brzmieniem zapraszamy do współpracy.
             </p>
-            {/* <img src={SLFoto} width={200}/> */}
           </DescriptionWrapper>
         </HomeDescription>
-        {/* <article>
-          <p style={{ maxWidth: '700px', margin: '16px', lineHeight: 2 }}>
-            <b>SaturdayLive - zespół muzyczny</b> z&nbsp;Warszawy specjalizujący
-            się w&nbsp;muzyce tanecznej, radiowych hitach, i&nbsp;klubowych
-            przebojach. SaturdayLive od wielu lat uświetnia swoimi wykonaniami{' '}
-            <b>imprezy firmowe</b>, <b>wesela</b>, oraz <b>imprezy plenerowe</b>
-            . Współpracujemy z&nbsp;agencjami eventowymi, agencjami ślubnymi,
-            wedding planerami, oraz osobami prywatnymi. Jeśli szukasz dobrej
-            muzyki, dobrej zabawy przy muzyce, wyrazistego zespołu z&nbsp;dobrą
-            prezencją i świetnym brzmieniem zapraszamy do współpracy.
-          </p>
-          <img src={SLFoto} />
-        </article> */}
 
         <h2>Oferta</h2>
 

@@ -1,4 +1,4 @@
-import React, { useTransition, useState, lazy } from 'react';
+import React, { useTransition, lazy } from 'react';
 
 import {
   FilmBox,
@@ -26,8 +26,6 @@ const YoutubePlayerMain = ({
   setHasLoaded: (hasLoaded: boolean) => void;
 }) => {
   const [, startTransition] = useTransition();
-  // const [showVideo, setShowVideo] = useState(false);
-  // const [hasLoaded, setHasLoaded] = useState(false);
   const imgQuality:
     | 'maxresdefault'
     | 'sddefault'

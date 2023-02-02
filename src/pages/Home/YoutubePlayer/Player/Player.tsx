@@ -20,10 +20,7 @@ const Player = ({
   const opts: YouTubeProps['opts'] = {
     playerVars: {
       autoplay: 1,
-      rel: 0,
-      // end: 6,
-      loop: 1
-      // controls: 0,
+      rel: 0
     }
   };
 
