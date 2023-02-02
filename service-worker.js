@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/saturdaylive-new-page/precache-manifest.3b1ae66d5f9992e65e05368526903413.js"
+  "/saturdaylive-new-page/precache-manifest.b1b5dc2f0d4492f43c666b8f3efff41f.js"
 );
 
 workbox.clientsClaim();
