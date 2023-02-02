@@ -1,30 +1,81 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { AudioPlayer, ContactBox, MainContentBox } from '../../components';
+import { ContactBox, MainContentBox } from '../../components';
 import {
   HomeDescription,
   StyledHeader,
   Wrapper,
   MainHeader,
   MainDescription,
-  DescriptionWrapper
+  DescriptionWrapper,
+  StopIcon,
+  StopButton
 } from './styled';
+import { YoutubePlayerMain } from './YoutubePlayer';
+import SLFoto from './SLfoto.jpg';
 
 export const Home = () => {
+  const [showVideo, setShowVideo] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  console.log(navigator);
   return (
     <>
       <Wrapper>
-        <MainContentBox $modified>
+        <MainContentBox $modified onClick={() => setShowVideo(false)}>
           <MainHeader>SaturdayLive</MainHeader>
           <MainDescription>
-            Zespół muzyczny z Warszawy specjalizujący się w&nbsp;muzyce tanecznej,
-            radiowych hitach i klubowych przebojach.
+            Zespół muzyczny z Warszawy specjalizujący się w&nbsp;muzyce
+            tanecznej, radiowych hitach i klubowych przebojach.
           </MainDescription>
+          {showVideo && hasLoaded && (
+            <StopButton onClick={() => setShowVideo(false)}>
+              <StopIcon />
+            </StopButton>
+          )}
         </MainContentBox>
       </Wrapper>
-      <StyledHeader />
+      <StyledHeader>
+        <YoutubePlayerMain
+          label={"You're Simply The Best"}
+          videoId={'TjefJuUJi7g'}
+          showVideo={showVideo}
+          setShowVideo={setShowVideo}
+          hasLoaded={hasLoaded}
+          setHasLoaded={setHasLoaded}
+        />
+      </StyledHeader>
       <MainContentBox>
-        <AudioPlayer />
+        <h1>SaturdayLive</h1>
+        <HomeDescription>
+          <DescriptionWrapper>
+            <p style={{ maxWidth: '700px', margin: '16px', lineHeight: 2 }}>
+              <b>SaturdayLive - zespół muzyczny</b> z&nbsp;Warszawy
+              specjalizujący się w&nbsp;muzyce tanecznej, radiowych hitach,
+              i&nbsp;klubowych przebojach. SaturdayLive od wielu lat uświetnia
+              swoimi wykonaniami <b>imprezy firmowe</b>, <b>wesela</b>, oraz{' '}
+              <b>imprezy plenerowe</b>. Współpracujemy z&nbsp;agencjami
+              eventowymi, agencjami ślubnymi, wedding planerami, oraz osobami
+              prywatnymi. Jeśli szukasz dobrej muzyki, dobrej zabawy przy
+              muzyce, wyrazistego zespołu z&nbsp;dobrą prezencją i świetnym
+              brzmieniem zapraszamy do współpracy.
+            </p>
+            {/* <img src={SLFoto} width={200}/> */}
+          </DescriptionWrapper>
+        </HomeDescription>
+        {/* <article>
+          <p style={{ maxWidth: '700px', margin: '16px', lineHeight: 2 }}>
+            <b>SaturdayLive - zespół muzyczny</b> z&nbsp;Warszawy specjalizujący
+            się w&nbsp;muzyce tanecznej, radiowych hitach, i&nbsp;klubowych
+            przebojach. SaturdayLive od wielu lat uświetnia swoimi wykonaniami{' '}
+            <b>imprezy firmowe</b>, <b>wesela</b>, oraz <b>imprezy plenerowe</b>
+            . Współpracujemy z&nbsp;agencjami eventowymi, agencjami ślubnymi,
+            wedding planerami, oraz osobami prywatnymi. Jeśli szukasz dobrej
+            muzyki, dobrej zabawy przy muzyce, wyrazistego zespołu z&nbsp;dobrą
+            prezencją i świetnym brzmieniem zapraszamy do współpracy.
+          </p>
+          <img src={SLFoto} />
+        </article> */}
+
         <h2>Oferta</h2>
 
         <HomeDescription>

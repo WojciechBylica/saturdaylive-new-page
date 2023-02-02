@@ -7,7 +7,7 @@ import {
   StyledHeader,
   ListField,
   RepertoirLink,
-  RepertoireButtons,
+  RepertoireButtons
 } from './styled';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { setToggleRepertoire } from '../../saturdaylive/saturdayLiveReducer';
@@ -44,7 +44,8 @@ export const Repertoir = () => {
           <StyledHeader>Sortuj</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoirLink $modified
+              <RepertoirLink
+                $modified
                 as="button"
                 onClick={() => dispatch(setToggleRepertoire())}
               >

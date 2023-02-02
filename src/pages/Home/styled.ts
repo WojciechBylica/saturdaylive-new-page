@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import foto from './foto1.jpg';
 import fotoBgr from './foto2.jpg';
+import { ReactComponent as stop } from './stop-svgrepo-com.svg';
 
 export const StyledHeader = styled.header`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-image: url(${foto});
   height: 700px;
-  margin-bottom: 32px;
   background-position: center;
   background-attachment: initial;
   background-size: contain;
@@ -18,11 +21,8 @@ export const StyledHeader = styled.header`
     height: 510px;
   }
 
-  @media (max-width: ${({ theme }) => theme.media.md}px) {
-    height: 300px;
-  }
-  @media (max-width: ${({ theme }) => theme.media.sm}px) {
-    height: 260px;
+  @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    height: calc(100vw * 0.56);
   }
 `;
 
@@ -58,11 +58,8 @@ export const Wrapper = styled.div`
     height: 510px;
   }
 
-  @media (max-width: ${({ theme }) => theme.media.md}px) {
-    height: 300px;
-  }
-  @media (max-width: ${({ theme }) => theme.media.sm}px) {
-    height: 260px;
+  @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    height: calc(100vw * 0.56);
   }
 `;
 
@@ -76,6 +73,20 @@ export const HomeDescription = styled.section`
 export const DescriptionWrapper = styled.div`
   background: ${({ theme }) => theme.color.backgroundLight};
   padding: 16px;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 10px;
+`;
+
+export const StopButton = styled.button`
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.color.secondary};
+  padding: 20px;
+`;
+
+export const StopIcon = styled(stop)`
+  margin-top: 32px;
+  width: 60px;
+  height: 60px;
 `;

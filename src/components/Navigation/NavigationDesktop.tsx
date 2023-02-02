@@ -20,7 +20,13 @@ const NavigationDesktop = () => (
         />
       </NavLink>,
       <StyledNavLink to="/repertuar">Repertuar</StyledNavLink>,
-      <StyledNavLink to="/galeria">Galeria</StyledNavLink>,
+      <StyledNavLink
+        as="a"
+        href="SATURDAYLIVE_rider.pdf"
+        title="Pobierz Rider techniczny"
+      >
+        Rider
+      </StyledNavLink>,
       <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
     ].map((link) => (
       <li key={nanoid()}>{link}</li>

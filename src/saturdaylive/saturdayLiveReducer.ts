@@ -25,11 +25,11 @@ const saturdayLiveSlice = createSlice({
     setToggleRepertoire: (state) => ({
       ...state,
       repertoireAlphabetical: !state.repertoireAlphabetical
-    }),
+    })
   }
 });
 
-export const { setMobileNavClose, setMobileNavOpen,setToggleRepertoire } =
+export const { setMobileNavClose, setMobileNavOpen, setToggleRepertoire } =
   saturdayLiveSlice.actions;
 
 export default saturdayLiveSlice.reducer;

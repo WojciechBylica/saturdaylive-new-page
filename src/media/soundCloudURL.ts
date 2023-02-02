@@ -1,1 +1,1 @@
-export const soundCloudURL ="https://soundcloud.com/saturdaylive"
+export const soundCloudURL = 'https://soundcloud.com/saturdaylive';

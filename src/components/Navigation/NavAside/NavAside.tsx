@@ -49,10 +49,11 @@ const NavAside = () => {
           </NavLinkMobile>,
 
           <NavLinkMobile
-            to="/galeria"
-            onClick={() => dispatch(setMobileNavClose())}
+            as="a"
+            href="SATURDAYLIVE_rider.pdf"
+            title="Pobierz Rider techniczny"
           >
-            Galeria
+            Rider
           </NavLinkMobile>,
 
           <NavLinkMobile

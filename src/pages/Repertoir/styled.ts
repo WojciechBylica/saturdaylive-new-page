@@ -108,6 +108,7 @@ export const ListSection = styled.section`
 `;
 
 export const ListHeader = styled.h2`
+  color: ${({ theme }) => theme.color.primary} !important;
   display: flex;
   align-items: center;
 `;

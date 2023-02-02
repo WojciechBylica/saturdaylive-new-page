@@ -1,23 +1,17 @@
 import styled from 'styled-components';
 
 export const FilmBox = styled.div`
-  width: 560px;
-  height: 315px;
-  margin-bottom: 32px;
+  width: 1200px;
+  height: 675px;
 
   @media (max-width: ${({ theme }) => theme.media.xl}px) {
-    width: 460px;
-    height: 258px;
+    width: 890px;
+    height: 506px;
   }
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
-    width: 350px;
-    height: 196px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.media.md}px) {
-    width: calc(100% - 32px);
-    height: auto;
+    height: calc(100vw * 0.56);
+    width: 100%;
   }
 `;
 
