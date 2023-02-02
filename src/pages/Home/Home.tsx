@@ -16,7 +16,7 @@ import { YoutubePlayerMain } from './YoutubePlayer';
 export const Home = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [hasLoaded, setHasLoaded] = useState(false);
-  console.log(navigator);
+
   return (
     <>
       <Wrapper>
@@ -43,6 +43,7 @@ export const Home = () => {
           setHasLoaded={setHasLoaded}
         />
       </StyledHeader>
+
       <MainContentBox>
         <h1>SaturdayLive</h1>
         <HomeDescription>
