@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ContactBox, MainContentBox } from '../../components';
 import SLOnStage from './images/IMG_6574.jpg';
-import MMWedding from './images/IMG_6578.jpg';
+import MMWedding from './images/IMG_6581.jpg';
 import Cert1 from './certs/cert1.png';
 import Cert2 from './certs/cert2.jpg';
 import Cert3 from './certs/cert3.jpg';
@@ -18,7 +18,8 @@ import {
   CasionosLogo,
   OnTracoLogo,
   WarsawLogo,
-  CertImg
+  CertImg,
+  ParagraphBox
 } from './styled';
 
 export const About = () => (
@@ -27,7 +28,7 @@ export const About = () => (
     <AboutBox>
       <AboutArticle>
         <AboutImg src={SLOnStage} alt="SaturdayLive na scenie" />
-        <div>
+        <ParagraphBox>
           <AboutParagraph>
             SaturdayLive to sześcio-osobowy kolektyw tworzony przez
             utalentowanych i&nbsp;doświadczonych wykonawców. Zespół wyróżnia się
@@ -41,12 +42,12 @@ export const About = () => (
             Zaufały nam dziesiątki klientów - firm, agencji, oraz osób
             prywatnych.
           </AboutParagraph>
-        </div>
+        </ParagraphBox>
       </AboutArticle>
 
       <AboutArticle>
         <AboutImg src={MMWedding} alt="SaturdayLive na weselu" />{' '}
-        <div>
+        <ParagraphBox>
           <AboutParagraph>
             Zespół powstał w&nbsp;2014 roku. Zwiedziliśmy całą Polskę,
             koncertowaliśmy również w&nbsp;Irlandii i&nbsp;Irlandii Północnej.
@@ -58,7 +59,7 @@ export const About = () => (
             Badachem, Danzelem, Darkiem Malejonkiem. Zrealizowaliśmy wesele
             Małgorzaty i&nbsp;Radosława Majdana.
           </AboutParagraph>
-        </div>
+        </ParagraphBox>
       </AboutArticle>
     </AboutBox>
     <h2>Doświadczenie</h2>

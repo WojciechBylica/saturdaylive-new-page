@@ -73,7 +73,7 @@ export const RepertoireLink = styled.a<{ $modified?: boolean }>`
   padding: 12px 16px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: inherit;
+  /* background-color: inherit; */
   border: 1px solid;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

@@ -18,9 +18,8 @@ export const AboutArticle = styled.article`
   display: flex;
   margin: 0 16px 32px 16px;
   border-radius: 10px;
-  padding: 16px;
   box-shadow: ${({ theme }) => theme.boxShadow};
-  background: ${({ theme }) => theme.color.backgroundLight};
+  background-color: ${({ theme }) => theme.color.backgroundTransparent};
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     flex-wrap: wrap;
@@ -28,19 +27,25 @@ export const AboutArticle = styled.article`
   }
 `;
 
+export const ParagraphBox = styled.div`
+  padding: 16px;
+`;
+
 export const RowArticle = styled(AboutArticle)`
+  padding: 16px;
   flex-direction: column;
 `;
 
 export const AboutImg = styled.img`
   width: 200px;
   height: 180px;
-  border-radius: 10px;
+  border-radius: 10px 0 10px 0;
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     width: 100%;
     height: auto;
     margin-bottom: 16px;
+    border-radius: 10px 10px 0 0;
   }
 `;
 

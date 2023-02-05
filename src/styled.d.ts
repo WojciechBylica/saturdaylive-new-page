@@ -13,6 +13,7 @@ interface IColors {
   background: string;
   backgroundDark: string;
   backgroundLight: string;
+  backgroundTransparent: string;
   primary: string;
   secondary: string;
   navBackground: string;
