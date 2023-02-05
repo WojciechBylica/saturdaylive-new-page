@@ -4,15 +4,14 @@ import { Layout } from '../components';
 import { Demo, Home, Repertoire, Contact } from '../pages';
 import { About } from '../pages/About';
 import {
-  // createBrowserRouter,
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
   Navigate
 } from 'react-router-dom';
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
