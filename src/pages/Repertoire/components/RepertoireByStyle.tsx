@@ -4,8 +4,8 @@ import { repertoireArray } from './repertoireArray';
 import {
   ListSection,
   AlphabeticalList,
-  RepertoirBigField,
-  RepertoirSmallList,
+  RepertoireBigField,
+  RepertoireSmallList,
   RepertoirSmallListField,
   ListHeader,
   HeaderImage
@@ -19,16 +19,16 @@ export const RepertoireByStyle = () => (
     </ListHeader>
     <AlphabeticalList $modified>
       {repertoireArray.map(({ title, songs }, index) => (
-        <RepertoirBigField key={`songs-group-${index}`}>
+        <RepertoireBigField key={`songs-group-${index}`}>
           <h3>{title}</h3>
-          <RepertoirSmallList>
+          <RepertoireSmallList>
             {songs.map((song, index) => (
               <RepertoirSmallListField key={`alfabetical-sorted-song-${index}`}>
                 {song}
               </RepertoirSmallListField>
             ))}
-          </RepertoirSmallList>
-        </RepertoirBigField>
+          </RepertoireSmallList>
+        </RepertoireBigField>
       ))}
     </AlphabeticalList>
   </ListSection>

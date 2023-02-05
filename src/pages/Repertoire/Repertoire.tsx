@@ -2,18 +2,18 @@ import React from 'react';
 
 import { ContactBox, MainContentBox } from '../../components';
 import {
-  RepertoirSection,
+  RepertoireSection,
   StyledList,
   StyledHeader,
   ListField,
-  RepertoirLink,
+  RepertoireLink,
   RepertoireButtons
 } from './styled';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { setToggleRepertoire } from '../../saturdaylive/saturdayLiveReducer';
 import { RepertoireAlphabetical, RepertoireByStyle } from './components';
 
-export const Repertoir = () => {
+export const Repertoire = () => {
   const repertoireAlphabetical = useAppSelector(
     ({ saturdayLive }) => saturdayLive.repertoireAlphabetical
   );
@@ -23,19 +23,19 @@ export const Repertoir = () => {
     <MainContentBox>
       <h1>Repertuar</h1>
 
-      <RepertoirSection>
+      <RepertoireSection>
         <RepertoireButtons $modified>
-          <StyledHeader>Pobierz repertuar</StyledHeader>
+          <StyledHeader $modified>Pobierz repertuar</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoirLink href={'Repertuar-SL-alfabetycznie.pdf'}>
+              <RepertoireLink href={'Repertuar-SL-alfabetycznie.pdf'}>
                 Podział alfabetyczny
-              </RepertoirLink>
+              </RepertoireLink>
             </ListField>
             <ListField>
-              <RepertoirLink href={'Repertuar-SL-stylistycznie.pdf'}>
+              <RepertoireLink href={'Repertuar-SL-stylistycznie.pdf'}>
                 Podział stylistyczny
-              </RepertoirLink>
+              </RepertoireLink>
             </ListField>
           </StyledList>
         </RepertoireButtons>
@@ -44,18 +44,18 @@ export const Repertoir = () => {
           <StyledHeader>Sortuj</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoirLink
+              <RepertoireLink
                 $modified
                 as="button"
                 onClick={() => dispatch(setToggleRepertoire())}
               >
                 Wyświetl podział{' '}
                 {!repertoireAlphabetical ? 'alfabetyczny' : 'stylistyczny'}
-              </RepertoirLink>
+              </RepertoireLink>
             </ListField>
           </StyledList>
         </RepertoireButtons>
-      </RepertoirSection>
+      </RepertoireSection>
 
       {repertoireAlphabetical ? (
         <RepertoireAlphabetical />

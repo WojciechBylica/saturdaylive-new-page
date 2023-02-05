@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const RepertoirSection = styled.section`
+export const RepertoireSection = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 10px;
@@ -34,9 +34,15 @@ export const RepertoireButtons = styled.section<{ $modified?: boolean }>`
     `};
 `;
 
-export const StyledHeader = styled.h2`
+export const StyledHeader = styled.h2<{ $modified?: boolean }>`
   padding: 16px 0 0 16px;
   margin: 0;
+
+  ${({ $modified }) =>
+    $modified &&
+    css`
+      color: ${({ theme }) => theme.color.primary};
+    `};
 `;
 
 export const StyledList = styled.ul`
@@ -55,7 +61,7 @@ export const ListField = styled.li`
   list-style-type: none;
 `;
 
-export const RepertoirLink = styled.a<{ $modified?: boolean }>`
+export const RepertoireLink = styled.a<{ $modified?: boolean }>`
   color: ${({ theme }) => theme.color.primary};
   font-size: 20px;
   display: flex;
@@ -86,11 +92,11 @@ export const RepertoirLink = styled.a<{ $modified?: boolean }>`
     `};
 `;
 
-export const RepertoirBigField = styled.li`
+export const RepertoireBigField = styled.li`
   margin-bottom: 32px;
   padding-left: 0;
 `;
-export const RepertoirSmallList = styled.ul`
+export const RepertoireSmallList = styled.ul`
   list-style-type: disc;
 `;
 
