@@ -31,7 +31,7 @@ const YoutubePlayerMain = ({
     | 'sddefault'
     | 'hqdefault'
     | 'mqdefault'
-    | 'default' = 'sddefault';
+    | 'default' = 'maxresdefault';
   return (
     <FilmBox>
       <VideoRatio>
