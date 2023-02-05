@@ -56,7 +56,13 @@ const YoutubePlayerMain = ({
             </div>
           </ThumbNailButton>
         )}
-        {showVideo && <Player videoId={videoId} setHasLoaded={setHasLoaded} />}
+        {showVideo && (
+          <Player
+            videoId={videoId}
+            setHasLoaded={setHasLoaded}
+            setShowVideo={setShowVideo}
+          />
+        )}
       </VideoRatio>
     </FilmBox>
   );

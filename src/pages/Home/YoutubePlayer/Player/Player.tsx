@@ -1,35 +1,22 @@
 import React from 'react';
 
-import YouTube, { YouTubeProps } from 'react-youtube';
+import YouTube from 'react-youtube';
 import './style.css';
+import { PlayerProps } from './types';
+import { usePlayer } from './usePlayer';
 
-const Player = ({
-  setHasLoaded,
-  videoId
-}: {
-  setHasLoaded: (hasLoaded: boolean) => void;
-  videoId: string;
-}) => {
-  const _onReady: YouTubeProps['onReady'] = (event) => {
-    setHasLoaded(true);
-    event.target.playVideo();
-    console.log(event.target);
-  };
-
-  //*configuration: https://developers.google.com/youtube/player_parameters *//
-  const opts: YouTubeProps['opts'] = {
-    playerVars: {
-      autoplay: 1,
-      rel: 0,
-      muted:1,
-    }
-  };
+const Player = ({ setHasLoaded, videoId, setShowVideo }: PlayerProps) => {
+  const { _onReady, _onStateChange, opts } = usePlayer({
+    setHasLoaded,
+    setShowVideo
+  });
 
   return (
     <YouTube
       videoId={videoId}
       onReady={_onReady}
-      className={'videoInner'}
+      onStateChange={_onStateChange}
+      className={'videoInner '}
       iframeClassName={'videoInner'}
       opts={opts}
     />

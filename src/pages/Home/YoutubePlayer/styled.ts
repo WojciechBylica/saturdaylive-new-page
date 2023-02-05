@@ -33,10 +33,16 @@ export const PlayIcon = styled.img`
   height: 42px;
   left: calc(50% - 30px);
   position: absolute;
-  top: calc(50% - 21px);
+  top: auto;
+  bottom: 10%;
   transition: all 0.3s ease-in-out;
   width: 60px;
-  z-index: 2000;
+  z-index: 1020;
+
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    width: 40px;
+    height: 30px;
+  }
 `;
 
 export const ThumbNailButton = styled.button`
