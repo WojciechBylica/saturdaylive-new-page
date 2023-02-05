@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js"
   },
   {
-    "revision": "049b8f87f2ebe9cb1aed",
-    "url": "/saturdaylive-new-page/static/js/main.049b8f87.chunk.js"
+    "revision": "292760c2a02a722c5712",
+    "url": "/saturdaylive-new-page/static/js/main.292760c2.chunk.js"
   },
   {
     "revision": "4493b2ceb2c850fdb65c",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/3.ace87710.chunk.js"
   },
   {
-    "revision": "735e23623accce42f8e4",
+    "revision": "b1fb5c99da8b291c93e3",
     "url": "/saturdaylive-new-page/static/css/4.f56b7ab3.chunk.css"
   },
   {
-    "revision": "735e23623accce42f8e4",
-    "url": "/saturdaylive-new-page/static/js/4.735e2362.chunk.js"
+    "revision": "b1fb5c99da8b291c93e3",
+    "url": "/saturdaylive-new-page/static/js/4.b1fb5c99.chunk.js"
   },
   {
     "revision": "952d4d37d1946583aec1",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/7.46f5e34c.chunk.js"
   },
   {
-    "revision": "b5d869b53d69c86e1e83",
-    "url": "/saturdaylive-new-page/static/js/runtime~main.b5d869b5.js"
+    "revision": "0f0d10c268275ed7fdf9",
+    "url": "/saturdaylive-new-page/static/js/runtime~main.0f0d10c2.js"
   },
   {
     "revision": "142d01569a294eafe562a8af856371ed",
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/media/ww.1b0d6908.svg"
   },
   {
-    "revision": "91ad389d51dda015a644dad13010ffd7",
+    "revision": "4df61b691cc7ed14fe1d1a6e4b5e2036",
     "url": "/saturdaylive-new-page/index.html"
   }
 ];
