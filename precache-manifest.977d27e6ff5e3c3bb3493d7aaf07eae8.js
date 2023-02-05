@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js"
   },
   {
-    "revision": "292760c2a02a722c5712",
-    "url": "/saturdaylive-new-page/static/js/main.292760c2.chunk.js"
+    "revision": "c77d286006abebbef8e9",
+    "url": "/saturdaylive-new-page/static/js/main.c77d2860.chunk.js"
   },
   {
     "revision": "4493b2ceb2c850fdb65c",
@@ -20,28 +20,28 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/3.ace87710.chunk.js"
   },
   {
-    "revision": "7ad85b7d4735536b46a1",
-    "url": "/saturdaylive-new-page/static/css/4.f56b7ab3.chunk.css"
+    "revision": "e86c328fa854c3d763a7",
+    "url": "/saturdaylive-new-page/static/css/4.4908ee5c.chunk.css"
   },
   {
-    "revision": "7ad85b7d4735536b46a1",
-    "url": "/saturdaylive-new-page/static/js/4.7ad85b7d.chunk.js"
+    "revision": "e86c328fa854c3d763a7",
+    "url": "/saturdaylive-new-page/static/js/4.e86c328f.chunk.js"
   },
   {
-    "revision": "952d4d37d1946583aec1",
-    "url": "/saturdaylive-new-page/static/js/5.952d4d37.chunk.js"
+    "revision": "c97706a104c8cac1bca4",
+    "url": "/saturdaylive-new-page/static/js/5.c97706a1.chunk.js"
   },
   {
-    "revision": "4a0953c0c36323a69a8c",
-    "url": "/saturdaylive-new-page/static/js/6.4a0953c0.chunk.js"
+    "revision": "bd7df3aa3cc91023b6c5",
+    "url": "/saturdaylive-new-page/static/js/6.bd7df3aa.chunk.js"
   },
   {
     "revision": "46f5e34ce942e7028c2c",
     "url": "/saturdaylive-new-page/static/js/7.46f5e34c.chunk.js"
   },
   {
-    "revision": "3f101d867317c7b8c1bd",
-    "url": "/saturdaylive-new-page/static/js/runtime~main.3f101d86.js"
+    "revision": "4bb7c87a147f087ba7cf",
+    "url": "/saturdaylive-new-page/static/js/runtime~main.4bb7c87a.js"
   },
   {
     "revision": "142d01569a294eafe562a8af856371ed",
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/media/ww.1b0d6908.svg"
   },
   {
-    "revision": "58619248b076b1586fd5d4f1ddc947f5",
+    "revision": "77af2ca2ae4a4a37f41e1067d2121033",
     "url": "/saturdaylive-new-page/index.html"
   }
 ];
