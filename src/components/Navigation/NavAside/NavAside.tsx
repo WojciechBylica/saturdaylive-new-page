@@ -67,8 +67,12 @@ const NavAside = () => {
         ))}
       </AsideList>
 
-      <NavLink to="/" onClick={() => dispatch(setMobileNavClose())}>
-        <img src="favicon.ico" height={60} width={60} alt="" />
+      <NavLink
+        to="/"
+        onClick={() => dispatch(setMobileNavClose())}
+        aria-label="Home"
+      >
+        <img src="favicon.ico" height={60} width={60} alt="logo" />
       </NavLink>
     </StyledAside>
   );

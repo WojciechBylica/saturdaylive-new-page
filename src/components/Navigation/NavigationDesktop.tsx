@@ -10,7 +10,7 @@ const NavigationDesktop = () => (
       <StyledNavLink to="/">Home</StyledNavLink>,
       <StyledNavLink to="/demo">Demo</StyledNavLink>,
       <StyledNavLink to="/o-nas">O nas</StyledNavLink>,
-      <NavLink to="/">
+      <NavLink to="/" aria-label="Home">
         <img
           height={90}
           width={268}

@@ -26,7 +26,7 @@ export const NavigationMobile = () => {
     <>
       <NavListMobile>
         <li>
-          <NavLink to="/">
+          <NavLink to="/" aria-label="Home">
             <img
               height={60}
               width={178}

@@ -84,9 +84,24 @@ export const About = () => (
           </li>
         </ul>
         <AboutSection $wrap>
-          <CertImg src={Cert2} alt="" width={200} height={275} />
-          <CertImg src={Cert3} alt="" width={200} height={275} />
-          <CertImg src={Cert1} alt="" width={200} height={120} />
+          <CertImg
+            src={Cert2}
+            alt="certyfikat numer 1"
+            width={200}
+            height={275}
+          />
+          <CertImg
+            src={Cert3}
+            alt="certyfikat numer 2"
+            width={200}
+            height={275}
+          />
+          <CertImg
+            src={Cert1}
+            alt="certyfikat certyfikat numer 3"
+            width={200}
+            height={120}
+          />
         </AboutSection>
       </RowArticle>
 
