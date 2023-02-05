@@ -20,7 +20,8 @@ const Player = ({
   const opts: YouTubeProps['opts'] = {
     playerVars: {
       autoplay: 1,
-      rel: 0
+      rel: 0,
+      muted:1,
     }
   };
 
