@@ -1,8 +1,8 @@
 {
   "static/js/0.b8988f5b.chunk.js": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js",
   "static/js/0.b8988f5b.chunk.js.map": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js.map",
-  "main.js": "/saturdaylive-new-page/static/js/main.c77d2860.chunk.js",
-  "main.js.map": "/saturdaylive-new-page/static/js/main.c77d2860.chunk.js.map",
+  "main.js": "/saturdaylive-new-page/static/js/main.65cc2d05.chunk.js",
+  "main.js.map": "/saturdaylive-new-page/static/js/main.65cc2d05.chunk.js.map",
   "static/js/2.4493b2ce.chunk.js": "/saturdaylive-new-page/static/js/2.4493b2ce.chunk.js",
   "static/js/2.4493b2ce.chunk.js.map": "/saturdaylive-new-page/static/js/2.4493b2ce.chunk.js.map",
   "static/css/3.a2082ff4.chunk.css": "/saturdaylive-new-page/static/css/3.a2082ff4.chunk.css",
@@ -27,7 +27,7 @@
   "static/media/foto1.jpg": "/saturdaylive-new-page/static/media/foto1.8f7c3bda.jpg",
   "static/media/foto2.jpg": "/saturdaylive-new-page/static/media/foto2.92cff6c2.jpg",
   "static/media/IMG_6574.jpg": "/saturdaylive-new-page/static/media/IMG_6574.85a41ed5.jpg",
-  "static/media/IMG_6578.jpg": "/saturdaylive-new-page/static/media/IMG_6578.539129c6.jpg",
+  "static/media/IMG_6581.jpg": "/saturdaylive-new-page/static/media/IMG_6581.f711cfcf.jpg",
   "static/media/cert1.png": "/saturdaylive-new-page/static/media/cert1.cfe2e97c.png",
   "static/media/cert2.jpg": "/saturdaylive-new-page/static/media/cert2.a42a23c1.jpg",
   "static/media/cert3.jpg": "/saturdaylive-new-page/static/media/cert3.633953d3.jpg",
@@ -37,9 +37,9 @@
   "static/media/casinos-poland.b55660a7.svg": "/saturdaylive-new-page/static/media/casinos-poland.b55660a7.svg",
   "static/media/ontraco.320ca402.svg": "/saturdaylive-new-page/static/media/ontraco.320ca402.svg",
   "static/media/ww.1b0d6908.svg": "/saturdaylive-new-page/static/media/ww.1b0d6908.svg",
-  "static/css/4.4908ee5c.chunk.css.map": "/saturdaylive-new-page/static/css/4.4908ee5c.chunk.css.map",
   "static/css/3.a2082ff4.chunk.css.map": "/saturdaylive-new-page/static/css/3.a2082ff4.chunk.css.map",
+  "static/css/4.4908ee5c.chunk.css.map": "/saturdaylive-new-page/static/css/4.4908ee5c.chunk.css.map",
   "index.html": "/saturdaylive-new-page/index.html",
-  "precache-manifest.977d27e6ff5e3c3bb3493d7aaf07eae8.js": "/saturdaylive-new-page/precache-manifest.977d27e6ff5e3c3bb3493d7aaf07eae8.js",
+  "precache-manifest.fd82d5acaccc861b2ae3e3463a1d4d36.js": "/saturdaylive-new-page/precache-manifest.fd82d5acaccc861b2ae3e3463a1d4d36.js",
   "service-worker.js": "/saturdaylive-new-page/service-worker.js"
 }
