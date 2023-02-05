@@ -32,6 +32,10 @@ export const MainHeader = styled.h1`
   @media (max-width: ${({ theme }) => theme.media.md}px) {
     font-size: 32px;
   }
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
 `;
 
 export const MainDescription = styled.p`
@@ -41,6 +45,10 @@ export const MainDescription = styled.p`
   @media (max-width: ${({ theme }) => theme.media.md}px) {
     font-size: 16px;
     max-width: 500px;
+  }
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    max-width: 300px;
+    margin-top: 0;
   }
 `;
 
@@ -59,7 +67,7 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
-    height: calc(100vw * 0.56);
+    height: calc(100vw * 0.56 + 3px);
   }
 `;
 
@@ -78,15 +86,27 @@ export const DescriptionWrapper = styled.div`
 `;
 
 export const StopButton = styled.button`
+  position: absolute;
+  bottom: 10%;
+  top: auto;
   border: none;
   background: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color.secondary};
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    bottom: 3%;
+    padding: 0;
+  }
 `;
 
 export const StopIcon = styled(stop)`
-  margin-top: 32px;
   width: 60px;
   height: 60px;
+
+  @media (max-width: ${({ theme }) => theme.media.md}px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
