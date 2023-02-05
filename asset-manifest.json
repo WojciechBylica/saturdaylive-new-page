@@ -1,8 +1,8 @@
 {
   "static/js/0.b8988f5b.chunk.js": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js",
   "static/js/0.b8988f5b.chunk.js.map": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js.map",
-  "main.js": "/saturdaylive-new-page/static/js/main.54e3fdf0.chunk.js",
-  "main.js.map": "/saturdaylive-new-page/static/js/main.54e3fdf0.chunk.js.map",
+  "main.js": "/saturdaylive-new-page/static/js/main.e2404915.chunk.js",
+  "main.js.map": "/saturdaylive-new-page/static/js/main.e2404915.chunk.js.map",
   "static/js/2.3ade13a5.chunk.js": "/saturdaylive-new-page/static/js/2.3ade13a5.chunk.js",
   "static/js/2.3ade13a5.chunk.js.map": "/saturdaylive-new-page/static/js/2.3ade13a5.chunk.js.map",
   "static/css/3.a2082ff4.chunk.css": "/saturdaylive-new-page/static/css/3.a2082ff4.chunk.css",
@@ -37,9 +37,9 @@
   "static/media/casinos-poland.b55660a7.svg": "/saturdaylive-new-page/static/media/casinos-poland.b55660a7.svg",
   "static/media/ontraco.320ca402.svg": "/saturdaylive-new-page/static/media/ontraco.320ca402.svg",
   "static/media/ww.1b0d6908.svg": "/saturdaylive-new-page/static/media/ww.1b0d6908.svg",
-  "static/css/4.4908ee5c.chunk.css.map": "/saturdaylive-new-page/static/css/4.4908ee5c.chunk.css.map",
   "static/css/3.a2082ff4.chunk.css.map": "/saturdaylive-new-page/static/css/3.a2082ff4.chunk.css.map",
+  "static/css/4.4908ee5c.chunk.css.map": "/saturdaylive-new-page/static/css/4.4908ee5c.chunk.css.map",
   "index.html": "/saturdaylive-new-page/index.html",
-  "precache-manifest.e5dd881ce05cbcccf76df0df48a07e7a.js": "/saturdaylive-new-page/precache-manifest.e5dd881ce05cbcccf76df0df48a07e7a.js",
+  "precache-manifest.d0692f61b43b06ec3ddcdf3c422eff5c.js": "/saturdaylive-new-page/precache-manifest.d0692f61b43b06ec3ddcdf3c422eff5c.js",
   "service-worker.js": "/saturdaylive-new-page/service-worker.js"
 }
