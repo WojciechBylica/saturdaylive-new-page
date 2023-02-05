@@ -1,7 +1,29 @@
 # SaturdayLive
 
 ## Demo
+
 https://wojciechbylica.github.io/saturdaylive-new-page/
+
+### Description
+
+This page is presenting a music band called "SaturdayLive". It provides all expected informations like descriptions, photos, videos, audio songs, repertoire, location on google map, technical rider download, contact e-mail link.
+
+![Preview](./previev-SL.png)
+
+### Technology, Libraries
+
+- Type-script
+- React
+- React-Redux
+- React-Youtube
+- React-Router
+- Styled-Components
+
+### My Comment
+
+![Preview](./lightHouse-SL.png)
+
+The App has pretty nice lightHouse result. It was a priority for me to make it as fast responsive as possible. Another challenge was to handle with blocking the yt video on a main page. As it occurred - iphones are blocking starting playing video unless the user has clicked 'play video'.
 
 # Getting Started with Create React App
 
