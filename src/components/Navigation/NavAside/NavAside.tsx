@@ -5,7 +5,13 @@ import { NavLink } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import { setMobileNavClose } from '../../../saturdaylive/saturdayLiveReducer';
 import { HamburgerButton, NavLinkMobile } from '../styled';
-import { StyledAside, AsideList, AsideListField } from './styled';
+import {
+  StyledAside,
+  AsideList,
+  AsideListField,
+  XIcon,
+  CloseButtonWrapper
+} from './styled';
 
 const NavAside = () => {
   const dispatch = useAppDispatch();
@@ -14,13 +20,15 @@ const NavAside = () => {
   );
   return (
     <StyledAside open={showNavAside}>
-      <HamburgerButton
-        close
-        onClick={() => dispatch(setMobileNavClose())}
-        aria-label="zamknij nawigację mobilną"
-      >
-        x
-      </HamburgerButton>
+      <CloseButtonWrapper>
+        <HamburgerButton
+          close
+          onClick={() => dispatch(setMobileNavClose())}
+          aria-label="Zamknij nawigację mobilną"
+        >
+          <XIcon />
+        </HamburgerButton>
+      </CloseButtonWrapper>
       <AsideList>
         {[
           <NavLinkMobile to="/" onClick={() => dispatch(setMobileNavClose())}>
