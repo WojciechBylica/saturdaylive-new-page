@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/js/0.b8988f5b.chunk.js"
   },
   {
-    "revision": "94e5f9f1c80a3c23a2d5",
-    "url": "/saturdaylive-new-page/static/js/main.94e5f9f1.chunk.js"
+    "revision": "5622b8981be4720a5ab7",
+    "url": "/saturdaylive-new-page/static/js/main.5622b898.chunk.js"
   },
   {
     "revision": "9d39f582998ab5f3a1d4",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/saturdaylive-new-page/static/media/x.df13156b.svg"
   },
   {
-    "revision": "04290a03fe6e1fd576f1b25ccf243fc6",
+    "revision": "3d5386463cfee6125bf6d5c788ddfdf4",
     "url": "/saturdaylive-new-page/index.html"
   }
 ];
