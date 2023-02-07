@@ -47,7 +47,7 @@ export const Demo = () => {
 
   return (
     <MainContentBox>
-      <h1>SaturdayLive - Demo</h1>
+      <h1>Demo</h1>
       <section>
         <article>
           <h2>Nagrania audio</h2>

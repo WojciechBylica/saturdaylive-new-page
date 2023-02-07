@@ -5,7 +5,7 @@ import { StyledMapIframe } from './styled';
 
 export const Contact = () => (
   <MainContentBox>
-    <h1>SaturdayLive - Kontakt</h1>
+    <h1>Kontakt</h1>
     <ContactBox />
     <h2>Nasza lokalizacja</h2>
     <StyledMapIframe
