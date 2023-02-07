@@ -12,6 +12,7 @@ import {
   XIcon,
   CloseButtonWrapper
 } from './styled';
+import { rider } from '../../../downloadPaths';
 
 const NavAside = () => {
   const dispatch = useAppDispatch();
@@ -56,11 +57,7 @@ const NavAside = () => {
             Repertuar
           </NavLinkMobile>,
 
-          <NavLinkMobile
-            as="a"
-            href="SATURDAYLIVE_rider.pdf"
-            title="Pobierz Rider techniczny"
-          >
+          <NavLinkMobile as="a" href={rider} title="Pobierz Rider techniczny">
             Rider
           </NavLinkMobile>,
 

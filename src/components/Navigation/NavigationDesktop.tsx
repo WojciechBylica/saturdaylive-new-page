@@ -3,6 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { StyledNavLink, NavList } from './styled';
 import { nanoid } from '@reduxjs/toolkit';
+import { rider } from '../../downloadPaths';
 
 const NavigationDesktop = () => (
   <NavList>
@@ -20,11 +21,7 @@ const NavigationDesktop = () => (
         />
       </NavLink>,
       <StyledNavLink to="/repertuar">Repertuar</StyledNavLink>,
-      <StyledNavLink
-        as="a"
-        href="SATURDAYLIVE_rider.pdf"
-        title="Pobierz Rider techniczny"
-      >
+      <StyledNavLink as="a" href={rider} title="Pobierz Rider techniczny">
         Rider
       </StyledNavLink>,
       <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>

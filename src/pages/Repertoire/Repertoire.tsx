@@ -12,6 +12,7 @@ import {
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { setToggleRepertoire } from '../../saturdaylive/saturdayLiveReducer';
 import { RepertoireAlphabetical, RepertoireByStyle } from './components';
+import { alphabeticalRepertoire, byStyleRepertoire } from '../../downloadPaths';
 
 export const Repertoire = () => {
   const repertoireAlphabetical = useAppSelector(
@@ -28,12 +29,12 @@ export const Repertoire = () => {
           <StyledHeader $modified>Pobierz repertuar</StyledHeader>
           <StyledList>
             <ListField>
-              <RepertoireLink href={'Repertuar-SL-alfabetycznie.pdf'}>
+              <RepertoireLink href={alphabeticalRepertoire}>
                 Podział alfabetyczny
               </RepertoireLink>
             </ListField>
             <ListField>
-              <RepertoireLink href={'Repertuar-SL-stylistycznie.pdf'}>
+              <RepertoireLink href={byStyleRepertoire}>
                 Podział stylistyczny
               </RepertoireLink>
             </ListField>
