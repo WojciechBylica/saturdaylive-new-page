@@ -19,7 +19,8 @@ import {
   OnTracoLogo,
   WarsawLogo,
   CertImg,
-  ParagraphBox
+  ParagraphBox,
+  AboutImgSecond
 } from './styled';
 
 export const About = () => (
@@ -46,7 +47,7 @@ export const About = () => (
       </AboutArticle>
 
       <AboutArticle>
-        <AboutImg src={MMWedding} alt="SaturdayLive na weselu" />{' '}
+        <AboutImgSecond src={MMWedding} alt="SaturdayLive na weselu" />
         <ParagraphBox>
           <AboutParagraph>
             Zespół powstał w&nbsp;2014 roku. Zwiedziliśmy całą Polskę,
