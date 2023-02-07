@@ -75,18 +75,6 @@ export const AboutImgSecond = styled(AboutImg)`
   }
 `;
 
-export const AboutImgSecond = styled(AboutImg)`
-  width: 200px;
-  height: 236px;
-
-  @media (max-width: ${({ theme }) => theme.media.sm}px) {
-    width: 100%;
-    height: auto;
-    margin-bottom: 16px;
-    border-radius: 10px 10px 0 0;
-  }
-`;
-
 export const AboutParagraph = styled.p<{ $modified?: boolean }>`
   margin-top: 0;
   padding-left: 20px;
