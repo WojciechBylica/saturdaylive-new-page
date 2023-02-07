@@ -47,6 +47,26 @@ export const AboutImg = styled.img`
   height: 229px;
   border-radius: 10px 0 10px 0;
 
+  @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    border-radius: 10px 0 0 10px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 10px 10px 0 0;
+  }
+`;
+
+export const AboutImgSecond = styled(AboutImg)`
+  width: 200px;
+  height: 236px;
+
+  @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    border-radius: 10px 0 0 10px;
+  }
+
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     width: 100%;
     height: auto;
