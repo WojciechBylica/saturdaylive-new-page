@@ -3,6 +3,7 @@ import { ReactComponent as Lidl } from './images/lidl.svg';
 import { ReactComponent as Casino } from './images/casinos-poland.svg';
 import { ReactComponent as OnTraco } from './images/ontraco.svg';
 import { ReactComponent as Warsaw } from './images/ww.svg';
+import { StyledFooter } from '../../components/Footer/styled';
 
 export const AboutBox = styled.section`
   display: grid;
@@ -17,9 +18,14 @@ export const AboutBox = styled.section`
 export const AboutArticle = styled.article`
   display: flex;
   margin: 0 16px 32px 16px;
+  padding-bottom: 16px;
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.boxShadow};
   background-color: ${({ theme }) => theme.color.backgroundTransparent};
+
+  @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    padding-bottom: 0;
+  }
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     flex-wrap: wrap;
@@ -38,8 +44,20 @@ export const RowArticle = styled(AboutArticle)`
 
 export const AboutImg = styled.img`
   width: 200px;
-  height: 180px;
+  height: 229px;
   border-radius: 10px 0 10px 0;
+
+  @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 10px 10px 0 0;
+  }
+`;
+
+export const AboutImgSecond = styled(AboutImg)`
+  width: 200px;
+  height: 236px;
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
     width: 100%;
