@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as X } from './x.svg';
 
 export const StyledAside = styled.aside<{ open: boolean }>`
   position: absolute;
@@ -20,6 +21,12 @@ export const StyledAside = styled.aside<{ open: boolean }>`
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
 `;
 
+export const CloseButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`;
+
 export const AsideList = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -29,4 +36,9 @@ export const AsideList = styled.ul`
 
 export const AsideListField = styled.li`
   margin: 16px 0;
+`;
+
+export const XIcon = styled(X)`
+  width: 40px;
+  height: 40px;
 `;

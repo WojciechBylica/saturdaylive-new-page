@@ -97,12 +97,9 @@ export const HamburgerButton = styled.button<{ close?: boolean }>`
   ${({ close }) =>
     close &&
     css`
-      align-self: end;
-      display: flex;
+      padding: 0;
       width: 40px;
       height: 40px;
-      align-items: center;
-      justify-content: center;
     `};
 `;
 
