@@ -24,10 +24,13 @@ export const AboutArticle = styled.article`
   background-color: ${({ theme }) => theme.color.backgroundTransparent};
 
   @media (max-width: ${({ theme }) => theme.media.lg}px) {
+    display: grid;
+    grid-template-columns: 200px auto;
     padding-bottom: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.media.sm}px) {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
