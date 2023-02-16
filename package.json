@@ -26,6 +26,7 @@
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7",
+    "typeface-lato": "^1.1.13",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },

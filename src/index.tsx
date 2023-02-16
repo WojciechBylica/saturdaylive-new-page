@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './saturdaylive/store';
 import { Provider } from 'react-redux';
+import 'typeface-lato';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

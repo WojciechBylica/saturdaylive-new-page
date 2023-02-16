@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import foto from './foto1.jpg';
-import fotoBgr from './foto2.jpg';
-import { ReactComponent as stop } from './stop-svgrepo-com.svg';
+import fotoBgr from './images/foto2.jpg';
+import { ReactComponent as stop } from './images/stop-svgrepo-com.svg';
 
 export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(${foto});
   height: 700px;
   background-position: center;
   background-attachment: initial;
